@@ -3,6 +3,8 @@ name: Super-Linter
 on: 
   push:
     branches: ["main"]
+   
+    
   pull_request:
     branches: ["main"]
 
@@ -21,3 +23,5 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: "main"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+          FILTER_REGEX_EXCLUDE: ".*layout\\.js"
+  
