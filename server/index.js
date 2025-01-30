@@ -20,14 +20,14 @@ app.listen(3000, () => {
 app.post('/uploadreport', (req, res) => {
   console.log(req.body)
 
-  const bd_Report = new BDSS_MAP({
+  const bdReport = new BDSS_MAP({
     location: req.body.location,
     date: req.body.date,
     description: req.body.description,
     source1: req.body.source
   })
 
-  bd_Report.save()
+  bdReport.save()
 
   res.status(200).json('woot')
 })
