@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import UploadForm from './components/UploadForm'
 
 export default function Home () {
   return (
     <div className={styles.page}>
+      <UploadForm></UploadForm>
       <main className={styles.main}>
         <Image
           className={styles.logo}
