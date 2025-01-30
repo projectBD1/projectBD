@@ -27,7 +27,7 @@ app.post('/uploadreport', (req, res) => {
     source1: req.body.source,
   })
 
-  BD_Report.save()
+  bd_Report.save()
 
   res.status(200).json("woot")
 })
