@@ -5,7 +5,7 @@ import UploadForm from './components/UploadForm'
 export default function Home () {
   return (
     <div className={styles.page}>
-      <UploadForm></UploadForm>
+      <UploadForm/>
       <main className={styles.main}>
         <Image
           className={styles.logo}
