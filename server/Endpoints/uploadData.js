@@ -18,11 +18,9 @@ router.post('/', async (req, res) => {
     })
     console.log('bd report: ', bdReport)
 
-
-
     res.status(200).json({ data: 'Woot' })
 
     mongoose.disconnect()
-  } catch (err) {console.error(err)}
+  } catch (err) { console.error(err) }
 })
 export default router
