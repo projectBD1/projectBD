@@ -10,8 +10,8 @@ app.use(express.json());
 
 app.use(cors({
 
-  origin:'http://localhost:3001',
-  credentials:true
+  origin: 'http://localhost:3001',
+  credentials: true
 }))
 app.use(express.json())
 
