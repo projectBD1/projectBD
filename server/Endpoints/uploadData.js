@@ -2,9 +2,9 @@ import express from 'express'
 import mongoose from 'mongoose'
 import BDSS_MAP from '../model/BDSS_MAP.js'
 
-import { Client } from "@googlemaps/google-maps-services-js";
+import { Client } from "@googlemaps/google-maps-services-js"
 
-const client = new Client({});
+const client = new Client({})
 
 const router = express.Router()
 
@@ -35,7 +35,7 @@ router.post('/', async (req, res) => {
         })
 
         if(country !== 'BD') {
-          return res.status(406).json({ data: "Address either not in Bangladesh or does not exist"})
+          return res.status(406).json({ data: 'Address either not in Bangladesh or does not exist'})
 
         } else {
 
@@ -59,7 +59,7 @@ router.post('/', async (req, res) => {
 
       })
       .catch((e) => {
-          return res.status(406).json({ data: "Address either not in Bangladesh or does not exist"})
+          return res.status(406).json({ data: 'Address either not in Bangladesh or does not exist'})
       });
 
   } catch (err) { console.error(err) }
