@@ -31,7 +31,7 @@ router.post('/', async (req, res) => {
         r.data.results[0].address_components.map((obj) => {
           if (obj.short_name === 'BD') {
             country = 'BD'
-            return
+            return null
           }
         })
 
@@ -49,7 +49,7 @@ router.post('/', async (req, res) => {
             description: req.body.description,
             source1: req.body.source
           })
-          console.log( 'bd report: ', bdReport )
+          console.log('bd report: ', bdReport)
 
           mongoose.disconnect()
 
@@ -57,8 +57,8 @@ router.post('/', async (req, res) => {
         }
       })
       .catch((e) => {
-          return res.status(406).json({ data: 'Address either not in Bangladesh or does not exist' })
-      });
+        return res.status(406).json({ data: 'Address either not in Bangladesh or does not exist' })
+      })
   } catch (err) { console.error(err) }
 })
 export default router
