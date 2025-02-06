@@ -28,10 +28,9 @@ router.post('/', async (req, res) => {
         const yCord = r.data.results[0].geometry.location.lat
         let country = null
 
-        r.data.results[0].address_components.map((obj) => {
+        r.data.results[0].address_components.forEach((obj) => {
           if (obj.short_name === 'BD') {
             country = 'BD'
-            return 69
           }
         })
 
