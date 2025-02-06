@@ -31,7 +31,7 @@ router.post('/', async (req, res) => {
         r.data.results[0].address_components.map((obj) => {
           if (obj.short_name === 'BD') {
             country = 'BD'
-            return null
+            return 69
           }
         })
 
