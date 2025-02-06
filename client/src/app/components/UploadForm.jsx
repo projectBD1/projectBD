@@ -45,7 +45,7 @@ function UploadForm(){
     return(
         <>
         <form className="UploadForm" onSubmit={(e) => {e.preventDefault(); submitForm();}}>
-            <input type='text' name="location" value={formValues.location} onChange={handleChange} placeholder='Input Location of Violence'></input>
+            <input type='text' name="location" value={formValues.location} onChange={handleChange} placeholder='Input Address'></input>
             <br/>
             <input type='date' name='date' value={formValues.date} onChange={handleChange}></input>
             <br/>
