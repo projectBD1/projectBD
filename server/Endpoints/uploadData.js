@@ -112,7 +112,7 @@ router.post('/', async (req, res) => {
 
     toxic_traits.forEach((trait) => {
       // console.log(toxicity[trait.toUpperCase()])
-      if (toxicity[trait.toUpperCase()].summaryScore.value > 0.85 || toxicity[trait.toUpperCase()].summaryScore.value > totalToxicity) {
+      if (toxicity[trait.toUpperCase()].summaryScore.value > totalToxicity) {
         totalToxicity = toxicity[trait.toUpperCase()].summaryScore.value
       }
     })
