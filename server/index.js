@@ -3,6 +3,8 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 import uploadData from './Endpoints/uploadData.js'
 import Limiter from './Middleware/rateLimiter.js'
+const app = express();
+
 dotenv.config()
 
 app.use(cors());
