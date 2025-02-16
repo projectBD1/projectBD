@@ -5,6 +5,7 @@ import dotenv from 'dotenv'
 import moment from 'moment-timezone'
 import { Client } from '@googlemaps/google-maps-services-js'
 import Perspective from 'perspective-api-client'
+import Groq from 'groq-sdk'
 
 dotenv.config()
 
@@ -56,16 +57,18 @@ async function geocode(req) {
   return [country, yCord, xCord]
 }
 
-async function mongodongo (req, xCord, yCord) {
+async function mongodongo (req, xCord, yCord, summary_ai) {
   await mongoose.connect(process.env.CONNECTION_STRING)
 
   const bdReport = await BDSS_MAP.create({
-    location: req.body.location,
     date: req.body.date,
+    location: req.body.location,
     x_coord: xCord,
     y_coord: yCord,
     description: req.body.description,
-    source1: req.body.source
+    source1: req.body.source,
+    ai_summary: summary_ai
+
   })
   console.log('bd report: ', bdReport)
 
@@ -80,6 +83,39 @@ function isValidPastDateUsingEarliestTimeZone(dateString) {
   const now = moment.tz('Pacific/Kiritimati'); // Current time in UTC+14
   return date.isValid() && date.isBefore(now);
 }
+
+const groq = new Groq({ apiKey: process.env.GROQ_KEY });
+
+async function summarize(prompt) {
+  const chatCompletion = await groq.chat.completions.create({
+    "messages": [
+      {
+        'role': 'user',
+        'content': prompt
+      }
+    ],
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 1,
+    "max_completion_tokens": 1024,
+    "top_p": 1,
+    "stream": true,
+    "stop": null
+  });
+
+  var output = ''
+  for await (const chunk of chatCompletion) {
+    //process.stdout.write(chunk.choices[0]?.delta?.content || '');
+    output = output + (chunk.choices[0]?.delta?.content || '')
+  }
+
+  return output
+}
+
+
+
+
+
+
 
 
 
@@ -101,6 +137,9 @@ router.post('/', async (req, res) => {
     }
     console.log("date passes")
 
+
+
+    /*
     // check if description is malicious or spam
     
     const toxicity = await Toxicity(req)
@@ -120,6 +159,9 @@ router.post('/', async (req, res) => {
     if(totalToxicity > 0.85) {
       return res.status(400).json({ data: 'you toxic boy' })
     }
+    */
+
+
 
     /* get coordinates of the location */
     const [country, yCord, xCord] = await geocode(req)
@@ -128,10 +170,15 @@ router.post('/', async (req, res) => {
     /* checks if address is in BD */
     if (country !== 'BD') {
       return res.status(406).json({ data: 'Address either not in Bangladesh or does not exist' })
-    } 
+    }
+
+    const prompt1 = 'If there was no article sent to you, or what was sent was not an article, response with (No article). If there was an article, but it is not related to the topic of violence against Hindus, response with (Not related). If the article is related to the topic of violence against Hindus, provide an extremely detailed summary of the events and findings of the article' + req.body.source
+    const prompt = 'If this is not an article/news, response that it is not one. If this is an article/news, summarize it if it is related to the topic of violence in Bangladesh usually against Hindus, the summary should be very detailed. If it is not related, respond that it is not related. ' + req.body.source
+
+    const summary_ai = await summarize(prompt)
     
     /* adding request data to mongodb */
-    await mongodongo(req, xCord, yCord)
+    await mongodongo(req, xCord, yCord, summary_ai)
     return res.status(200).json({ data: 'Woot' })
 
   } catch (err) { console.error(err) }
