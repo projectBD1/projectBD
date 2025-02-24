@@ -62,6 +62,8 @@ async function mongodongo (req, xCord, yCord, summary_ai) {
 
   const bdReport = await BDSS_MAP.create({
     date: req.body.date,
+    division: req.body.division,
+    district: req.body.district,
     location: req.body.location,
     x_coord: xCord,
     y_coord: yCord,
@@ -110,9 +112,6 @@ async function summarize(prompt) {
 
   return output
 }
-
-
-
 
 
 
@@ -172,10 +171,13 @@ router.post('/', async (req, res) => {
       return res.status(406).json({ data: 'Address either not in Bangladesh or does not exist' })
     }
 
-    const prompt1 = 'If there was no article sent to you, or what was sent was not an article, response with (No article). If there was an article, but it is not related to the topic of violence against Hindus, response with (Not related). If the article is related to the topic of violence against Hindus, provide an extremely detailed summary of the events and findings of the article' + req.body.source
-    const prompt = 'If this is not an article/news, response that it is not one. If this is an article/news, summarize it if it is related to the topic of violence in Bangladesh usually against Hindus, the summary should be very detailed. If it is not related, respond that it is not related. ' + req.body.source
-
-    const summary_ai = await summarize(prompt)
+    /* if there is a source, create an AI summary of it */
+    var summary_ai = null
+    if (req.body.source !== '') {
+          //const prompt1 = 'If there was no article sent to you, or what was sent was not an article, response with (No article). If there was an article, but it is not related to the topic of violence against Hindus, response with (Not related). If the article is related to the topic of violence against Hindus, provide an extremely detailed summary of the events and findings of the article' + req.body.source
+          const prompt = 'If this is not an article/news, response that it is not one. If this is an article/news, summarize it if it is related to the topic of violence in Bangladesh usually against Hindus, the summary should be very detailed. If it is not related, respond that it is not related. ' + req.body.source
+          summary_ai = await summarize(prompt)
+    }
     
     /* adding request data to mongodb */
     await mongodongo(req, xCord, yCord, summary_ai)
