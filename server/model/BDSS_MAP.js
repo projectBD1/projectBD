@@ -4,6 +4,8 @@ const {Schema, model} = mongoose;
 const BDSS_SCHEMA = new Schema({
   type: String,
   date: String,
+  division: String,
+  district: String,
   location: String,
   x_coord: Number,
   y_coord: Number,
