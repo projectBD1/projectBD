@@ -1,0 +1,27 @@
+.banner {
+    width: 100vw;
+    height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.banner-img {
+    object-fit: cover;
+    width: 100vw;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 0.s ease-out;
+}
+.banner-text {
+    position: absolute;
+    max-width: 40vw;
+    z-index: 1;
+}
+.banner-text-header {
+    font-size: 70px;
+}

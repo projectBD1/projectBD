@@ -1,0 +1,16 @@
+.mission {
+    background-color: white;
+    width: 100vw;
+    height: 500px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mission-container {
+    display: flex;
+    max-width: 1200px;
+}
+.mission-img {
+    height: 400px;
+}
