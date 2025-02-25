@@ -1,9 +1,11 @@
-import mongoose from 'mongoose';
-const {Schema, model} = mongoose;
+import mongoose from 'mongoose'
+const { Schema, model } = mongoose
 
 const BDSS_SCHEMA = new Schema({
   type: String,
   date: String,
+  division: String,
+  district: String,
   location: String,
   x_coord: Number,
   y_coord: Number,
@@ -15,5 +17,5 @@ const BDSS_SCHEMA = new Schema({
   tags: Object
 })
 
-const BDSS_MAP = model('BDSS_MAP', BDSS_SCHEMA);
-export default BDSS_MAP;
+const BDSS_MAP = model('BDSS_MAP', BDSS_SCHEMA)
+export default BDSS_MAP
