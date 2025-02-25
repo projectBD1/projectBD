@@ -1,18 +1,28 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    background-color: blue;
+    background-color: #0077b6;
     width: 100vw;
+    height: 60px;
     justify-content: center;
     align-items: center;
     gap: 200px;
 }
 .navbar-logo {
-    height: 50px
+    height: 50px;
 }
 .navbar-links {
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 50px;
+    align-items: center;
+    font-size: 16px;
+}
+.navbar-donate-button {
+    padding: 5px;
+    background-color: rgb(255, 187, 0);
+    border: none;
+    border-radius: 1.5px;
+    font-size: 15px;
 }

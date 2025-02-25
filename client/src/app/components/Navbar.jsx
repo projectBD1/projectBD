@@ -7,11 +7,11 @@ const Navbar = () => {
             <div>
                 <ul className='navbar-links'>
                     <li>Home</li>
+                    <li>About the Genocide</li>
                     <li>Map & Report</li>
                     <li>Blog</li>
-                    <li>About the Genocide</li>
                     <li>Contact Us</li>
-                    <button>Donate</button>
+                    <button className='navbar-donate-button'>Donate</button>
                 </ul>
             </div>
         </div>

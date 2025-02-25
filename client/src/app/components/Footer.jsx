@@ -6,34 +6,38 @@ const Footer = () => {
 
                 <div className='footer1'>
                     <img className='footer-logo' src='next.svg'/>
-                    <h2>ProjectBD Hindu Support Foundation (Not created Yet)</h2>
+                    <h2>ProjectBD Hindu Support Foundation</h2>
                     <p>We imagine a future where Hindu and Muslim Children can play together.
                         A future where hate and violence does not divide us.</p>
                 </div>
                 <div className='footer2'>
                     <ul className='footer-nav-links'>
+                        <h2>Links</h2>
                         <li>Home</li>
+                        <li>About the Genocide</li>
                         <li>Map & Report</li>
                         <li>Blog</li>
-                        <li>About the Genocide</li>
                         <li>Contact Us</li>
                     </ul>
                 </div>
                 <div className='footer3'>
                     <h2>Contact Us</h2>
-                    <div>contact@projectBD.org</div>
-                    <div>1(666)666-6666</div>
+                    <div className='footer-contact-text'>contact@projectBD.org</div>
+                    <div className='footer-contact-text'>1(666)666-6666</div>
                 </div>
                 <div className='footer4'>
-                    <h2>Support</h2>
-                    <div>Help support Bangladesh Hindus</div>
-                    <button>Donate</button>
+                    <h2 >Support</h2>
+                    <div className='footer-support-text'>Help support Bangladesh Hindus</div>
+                    <div className='footer-support-text'>Donate to us or other organizations</div>
+                    <button className='footer-support-button'>Donate</button>
                 </div>
             
             </div>
             <div className='copyright'>
-                Copyright 2025 ProjectBD Hindu Support Foundation
                 <div>
+                    Copyright 2025 ProjectBD Hindu Support Foundation
+                </div>
+                <div className='copyright-social'>
                     <img className='footer-social-img' src='facebook.png'/>
                     <img className='footer-social-img' src='twitter.png'/>
                     <img className='footer-social-img' src='instagram.png'/>

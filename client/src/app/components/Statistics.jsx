@@ -17,7 +17,7 @@ const Statistics = () => {
                     <h1>4/10 of bananas get eaten</h1>
                 </div>
             </div>
-            <button>Learn more</button>
+            <button className='stat-button'>Learn more</button>
         </div>
     )
 }; export default Statistics

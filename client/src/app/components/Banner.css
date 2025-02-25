@@ -10,7 +10,6 @@
 .banner-img {
     object-fit: cover;
     width: 100vw;
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,9 +18,27 @@
 }
 .banner-text {
     position: absolute;
-    max-width: 40vw;
+    max-width: 30vw;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px
 }
 .banner-text-header {
     font-size: 70px;
+}
+.banner-text-body{
+    font-size: 18px;
+    line-height: 1.4;
+    color:rgb(187, 187, 187);
+}
+.banner-text-button-container {
+    max-width: 100%;
+    display: flex;
+}
+.banner-text-button {
+    font-size: 18px;
+    max-width: 150px;
+    padding: 10px;
+    margin-top: 20px;
 }
