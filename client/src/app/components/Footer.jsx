@@ -1,7 +1,7 @@
 import './Footer.css'
 const Footer = () => {
     return(
-        <div className='footer'>
+        <footer className='footer'>
             <div className='footer-container'>
 
                 <div className='footer1'>
@@ -44,6 +44,6 @@ const Footer = () => {
                     <img className='footer-social-img' src='linkedIn.png'/>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }; export default Footer
