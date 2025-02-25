@@ -3,9 +3,10 @@ import cors from 'cors'
 import mongoose from 'mongoose'
 import BDSS_MAP from './model/BDSS_MAP.js'
 import dotenv from 'dotenv'
-import uploadData from './Endpoints/uploadData.js'
+// import uploadData from './Endpoints/uploadData.js'
 import Limiter from './Middleware/rateLimiter.js'
 import spamChecker from './Endpoints/antiSpam.js'
+import payment from './Endpoints/payment.js'
 const app = express();
 
 dotenv.config()
@@ -22,8 +23,9 @@ app.use(cors({
 app.get('/', (req, res) => {
   res.send('Anniemesh is a banana.')
 })
-app.use('/uploadreport',Limiter, uploadData)
+// app.use('/uploadreport',Limiter, uploadData)
 app.use('/:userIp/:userId/:text',Limiter, spamChecker )
+// app.use('/payment',payment)
 app.listen(3000, () => {
   console.log('Listening on port 3000')
 })
