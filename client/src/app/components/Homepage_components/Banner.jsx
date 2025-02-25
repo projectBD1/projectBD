@@ -20,7 +20,10 @@ const Banner = () => {
 
     return(
         <div className="banner">
-            <img className='banner-img' src='fire_in_hand.png' style={{ top: `${40 + scrollY / 10}%` }} /* Adjust the scroll speed *//>
+            <video className='banner-video' autoPlay loop muted style={{ top: `${40 + scrollY / 50}%` }}>
+                <source src='random2.mp4' type='video/mp4' />
+                Your browser does not support the video tag.
+            </video>
             <div className='banner-text'>
                 <h1 className='banner-text-header'>Welcome to ProjectBD Website</h1>
                 <p className='banner-text-body'>ProjectBD is a student-led non-profit organization, who are supporting Bangladesh Hindus against Genocide. We wish to be the voice of those who cannot speak. We wish to fight for those who cannot fight. We wish to be there for those who have no one.</p>
