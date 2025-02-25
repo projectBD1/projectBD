@@ -1,0 +1,32 @@
+.footer{
+    height: 400px;
+    width: 100vw;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container{
+    display: flex;
+    gap:50px;
+    max-width: 1200px;
+}
+.footer-logo{
+    max-height: 100px;
+}
+
+.footer-nav-links {
+    list-style: none;
+    font-size: 25px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social-img {
+    max-height: 40px;
+}

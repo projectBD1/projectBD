@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+.navbar-logo {
+    height: 50px
+}
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 50px;
+}
