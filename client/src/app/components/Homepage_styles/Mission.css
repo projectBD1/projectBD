@@ -1,8 +1,8 @@
 .mission {
-    background-color: white;
+    background-color: #f5f5f5;
     width: 100vw;
-    height: 500px;
-    color: black;
+    height: 600px;
+    color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,28 +10,82 @@
 .mission-container {
     display: flex;
     max-width: 1200px;
-    gap: 40px;
-    justify-content: center;
+    gap: 100px;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
+.image-with-box {
+    position: relative; /* This makes the position of the box relative to this container */
+}
+
 .mission-img {
     height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* Ensure the image stays on top */
+    z-index: 2; /* Make sure the image stays above the green box */
 }
+.mission-img:hover {
+    transform: scale(1.02);
+}
+
+.green-box {
+    position: absolute;
+    bottom: -30px;  /* Moves the box slightly below the image */
+    left: -30px;    /* Moves the box slightly to the left */
+    width: 100%;
+    height: 100%;
+    background-color: rgb(13, 119, 13);
+    z-index: 1;    /* Ensure the green box stays behind the image */
+}
+
 .mission-text {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 500px;
+    text-align: left;
 }
+
+/* Header Styling */
 .mission-text-header {
-    font-size: 50px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
 }
+
+/* Body text styling */
 .mission-text-body {
     font-size: 18px;
-    line-height: 1.4;
+    line-height: 1.6;
+    color: #555;
 }
 .mission-text-button {
     font-size: 18px;
     max-width: 150px;
     padding: 10px;
-    align-self: center;
+    background-color: #e67e22;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Styling (sharp edges) */
+/*
+.mission-text-button {
+    font-size: 18px;
+    max-width: 180px;
+    padding: 12px 24px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    align-self: flex-start;
 }
