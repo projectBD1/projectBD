@@ -22,9 +22,17 @@
     height: 300px;
     width: 400px;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.homepage-images-small:hover {
+    transform: scale(1.02);
 }
 .homepage-images-tall {
     max-width: 400px;
     max-height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.homepage-images-tall:hover {
+    transform: scale(1.02)
 }
