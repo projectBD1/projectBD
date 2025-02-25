@@ -10,7 +10,28 @@
 .mission-container {
     display: flex;
     max-width: 1200px;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
 .mission-img {
     height: 400px;
+}
+.mission-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mission-text-header {
+    font-size: 50px;
+}
+.mission-text-body {
+    font-size: 18px;
+    line-height: 1.4;
+}
+.mission-text-button {
+    font-size: 18px;
+    max-width: 150px;
+    padding: 10px;
+    align-self: center;
 }
