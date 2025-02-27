@@ -1,9 +1,10 @@
 import Navbar from "./Navbar";
 import Banner from "./Homepage_components/Banner";
 import Mission from "./Homepage_components/Mission";
+import Images from "./Homepage_components/Images";
+import Facts from "./Homepage_components/Facts";
 import Statistics from "./Homepage_components/Statistics";
 import Footer from "./Footer";
-import Images from "./Homepage_components/Images";
 const Homepage = () => {
     return(
         <>
@@ -11,7 +12,7 @@ const Homepage = () => {
         <Banner/>
         <Mission/>
         <Images/>
-        <Statistics/>
+        <Facts/>
         <Footer/>
         </>
     )
