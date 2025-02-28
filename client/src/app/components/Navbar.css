@@ -52,7 +52,9 @@
     font-size: 17px;
 }
 .navbar-donate-button {
-    padding: 5px;
+    padding: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
     background-color: #e67e22;
     border: none;
     border-radius: 1.5px;
