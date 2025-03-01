@@ -5,6 +5,7 @@ import Images from "./Homepage_components/Images";
 import Facts from "./Homepage_components/Facts";
 import Statistics from "./Homepage_components/Statistics";
 import Footer from "./Footer";
+
 const Homepage = () => {
     return(
         <>

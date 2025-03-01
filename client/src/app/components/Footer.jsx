@@ -12,7 +12,7 @@ const Footer = () => {
                 </div>
                 <div className='footer2'>
                     <ul className='footer-nav-links'>
-                        <h2>Links</h2>
+                        <h2>Navigation</h2>
                         <li>Home</li>
                         <li>About the Genocide</li>
                         <li>Map & Report</li>
@@ -20,16 +20,17 @@ const Footer = () => {
                         <li>Contact Us</li>
                     </ul>
                 </div>
-                <div className='footer3'>
-                    <h2>Contact Us</h2>
-                    <div className='footer-contact-text'>contact@projectBD.org</div>
-                    <div className='footer-contact-text'>1(666)666-6666</div>
-                </div>
                 <div className='footer4'>
                     <h2 >Support</h2>
                     <div className='footer-support-text'>Help support Bangladesh Hindus</div>
                     <div className='footer-support-text'>Donate to us or other organizations</div>
                     <button className='footer-support-button'>Donate</button>
+                </div>
+                <div className='footer3'>
+                    <h2>Contact Us</h2>
+                    <div className='footer-contact-text'>Phone: 1(666)666-6666</div>
+                    <div className='footer-contact-text'>Email: contact@projectBD.org</div>
+                    <div className='footer-contact-text'>Mail: 123 Sesame Street, {<br/>} NY, NY 10010</div>
                 </div>
             
             </div>
@@ -41,7 +42,7 @@ const Footer = () => {
                     <img className='footer-social-img' src='facebook.png'/>
                     <img className='footer-social-img' src='twitter.png'/>
                     <img className='footer-social-img' src='instagram.png'/>
-                    <img className='footer-social-img' src='linkedIn.png'/>
+                    <img className='footer-social-img' src='linkedin.png'/>
                 </div>
             </div>
         </footer>
