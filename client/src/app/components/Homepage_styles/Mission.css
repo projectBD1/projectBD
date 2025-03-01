@@ -20,7 +20,7 @@
 }
 
 .mission-img {
-    height: 400px;
+    max-height: 400px;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
     position: relative; /* Ensure the image stays on top */
@@ -73,6 +73,43 @@
     align-self: flex-start;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+@media(max-width: 1200px){
+   .mission{
+
+   }
+   .mission-container{
+        gap: 5vw;
+   }
+   .mission-img{
+        max-width: 45vw;
+   }
+   .mission-text{
+        max-width: 40vw;
+   }
+}
+
+@media(max-width: 800px){
+    .mission {
+        height: auto;
+        padding: 25px;
+    }
+    .mission-container{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .mission-img{
+        max-width: 70vw;
+    }
+    .mission-text{
+        max-width: 75vw;
+        gap: 10px;
+    }
+    .mission-text-header {
+        margin-bottom: 0px;
+    }
+}
+
 
 /* Button Styling (sharp edges) */
 /*
