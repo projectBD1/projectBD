@@ -23,6 +23,8 @@
     gap: 30px;
 }
 
+
+
 .stat-button {
     font-size: 18px;
     max-width: 150px;
@@ -63,6 +65,7 @@
 }
 
 
+
 .stat-box-img {
     object-fit: cover;
     height: 100%;
@@ -80,4 +83,29 @@
     z-index: 2;
     color: white;
     padding: 20px;
+}
+
+@media(max-width: 900px){
+    .statistics{
+        background:none;
+        gap: 30px;
+    }
+    .stat-container{
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+    }
+    .stat-box{
+        width: 75vw;
+        height: 35vh;
+        
+
+    }
+}
+
+@media(max-width: 700px){
+    .stat-box{
+        width: 82.5vw;
+        height: 30vh;
+    }
 }
