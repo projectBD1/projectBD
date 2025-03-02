@@ -64,14 +64,9 @@
 
 .navbar-hamburger{
     height: 50px;
-    position: absolute;
-    top: 10;
-    right: 25;
+
 }
 
-.navbar-hamburger:not(.scrolled) {
-    top: 25;
-}
 
 @media(max-width: 1200px) {
     .navbar {
@@ -83,9 +78,6 @@
     .navbar-links {
         gap: 3vw;
     }
-    .navbar-logo {
-
-    }
 }
 
 
@@ -96,7 +88,11 @@
 }
 
 @media(max-width: 800px) {
-    .navbar-hamburger{
+    .navbar{
+        justify-content: space-between; /* This ensures space between the elements */
+    }
+    .navbar-hamburger {
+       margin-right: 5px;
         
     }
     .navbar-links{
