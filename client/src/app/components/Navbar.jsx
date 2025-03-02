@@ -36,6 +36,7 @@ const Navbar = () => {
                     <li>Contact Us</li>
                     <button className='navbar-donate-button'>Donate</button>
                 </ul>
+            <img className={`navbar-hamburger ${scrolled ? 'scrolled' : ''}`} src='Hamburger_icon1.png'/>
             </div>
         </div>
 

@@ -11,6 +11,7 @@
     left: 0;
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     z-index: 1000;
+    position: relative;
 }
 
 .navbar:not(.scrolled) {
@@ -59,4 +60,46 @@
     border: none;
     border-radius: 1.5px;
     font-size: 15px;
+}
+
+.navbar-hamburger{
+    height: 50px;
+    position: absolute;
+    top: 10;
+    right: 25;
+}
+
+.navbar-hamburger:not(.scrolled) {
+    top: 25;
+}
+
+@media(max-width: 1200px) {
+    .navbar {
+        gap: 10vw;
+        justify-content: flex-start;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .navbar-links {
+        gap: 3vw;
+    }
+    .navbar-logo {
+
+    }
+}
+
+
+@media(min-width: 801px) {
+    .navbar-hamburger{
+        display: none;
+    }
+}
+
+@media(max-width: 800px) {
+    .navbar-hamburger{
+        
+    }
+    .navbar-links{
+        display: none;
+    }
 }

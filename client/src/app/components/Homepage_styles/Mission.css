@@ -107,6 +107,11 @@
     }
     .mission-text-header {
         margin-bottom: 0px;
+        font-size: 38px;
+    }
+
+    .mission-text-body {
+        font-size: 15px;
     }
 }
 

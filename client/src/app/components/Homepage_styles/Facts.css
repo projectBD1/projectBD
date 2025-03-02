@@ -10,3 +10,10 @@
   background-attachment: fixed; /* Keeps the background fixed during scrolling */
 }
 
+@media(max-width: 700px){
+  .facts{
+    height: 1200px;
+    max-height: auto;
+  }
+  
+}
