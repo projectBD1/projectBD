@@ -12,6 +12,7 @@
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     z-index: 1000;
     position: relative;
+    color: white;
 }
 
 .navbar:not(.scrolled) {
@@ -58,8 +59,9 @@
     padding-right: 8px;
     background-color: #e67e22;
     border: none;
-    border-radius: 1.5px;
+    border-radius: 2px;
     font-size: 15px;
+    color: white;
 }
 
 .navbar-hamburger{
