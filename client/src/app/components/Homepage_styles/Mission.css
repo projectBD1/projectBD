@@ -72,6 +72,7 @@
     cursor: pointer;
     align-self: flex-start;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    color: white;
 }
 
 @media(max-width: 1200px){
