@@ -1,45 +1,53 @@
 import './Footer.css'
 const Footer = () => {
     return(
-        <div className='footer'>
+        <footer className='footer'>
             <div className='footer-container'>
 
                 <div className='footer1'>
                     <img className='footer-logo' src='next.svg'/>
-                    <h2>ProjectBD Hindu Support Foundation (Not created Yet)</h2>
+                    <h2>ProjectBD Hindu Support Foundation</h2>
                     <p>We imagine a future where Hindu and Muslim Children can play together.
                         A future where hate and violence does not divide us.</p>
                 </div>
-                <div className='footer2'>
-                    <ul className='footer-nav-links'>
-                        <li>Home</li>
-                        <li>Map & Report</li>
-                        <li>Blog</li>
-                        <li>About the Genocide</li>
-                        <li>Contact Us</li>
-                    </ul>
-                </div>
-                <div className='footer3'>
-                    <h2>Contact Us</h2>
-                    <div>contact@projectBD.org</div>
-                    <div>1(666)666-6666</div>
-                </div>
-                <div className='footer4'>
-                    <h2>Support</h2>
-                    <div>Help support Bangladesh Hindus</div>
-                    <button>Donate</button>
+                <div className='footer-container234'>
+
+                    <div className='footer2'>
+                        <ul className='footer-nav-links'>
+                            <h2>Navigation</h2>
+                            <li>Home</li>
+                            <li>About the Genocide</li>
+                            <li>Map & Report</li>
+                            <li>Blog</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                    <div className='footer4'>
+                        <h2 >Support</h2>
+                        <div className='footer-support-text'>Help support Bangladesh Hindus</div>
+                        <div className='footer-support-text'>Donate to us or other organizations</div>
+                        <button className='footer-support-button'>Donate</button>
+                    </div>
+                    <div className='footer3'>
+                        <h2>Contact Us</h2>
+                        <div className='footer-contact-text'>Phone: 1(666)666-6666</div>
+                        <div className='footer-contact-text'>Email: contact@projectBD.org</div>
+                        <div className='footer-contact-text'>Mail: 123 Sesame Street, {<br/>} NY, NY 10010</div>
+                    </div>
                 </div>
             
             </div>
             <div className='copyright'>
-                Copyright 2025 ProjectBD Hindu Support Foundation
                 <div>
+                    Copyright 2025 ProjectBD Hindu Support Foundation
+                </div>
+                <div className='copyright-social'>
                     <img className='footer-social-img' src='facebook.png'/>
                     <img className='footer-social-img' src='twitter.png'/>
                     <img className='footer-social-img' src='instagram.png'/>
-                    <img className='footer-social-img' src='linkedIn.png'/>
+                    <img className='footer-social-img' src='linkedin.png'/>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }; export default Footer

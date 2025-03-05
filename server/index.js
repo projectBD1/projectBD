@@ -7,7 +7,6 @@ import dotenv from 'dotenv'
 import Limiter from './Middleware/rateLimiter.js'
 import spamChecker from './Endpoints/antiSpam.js'
 import payment from './Endpoints/payment.js'
-
 const app = express();
 
 dotenv.config()
@@ -27,6 +26,7 @@ app.get('/', (req, res) => {
 // app.use('/uploadreport',Limiter, uploadData)
 app.use('/:userIp/:userId/:text',Limiter, spamChecker )
 app.use('/payment',payment)
+// app.use('/payment',payment)
 app.listen(3000, () => {
   console.log('Listening on port 3000')
 })
