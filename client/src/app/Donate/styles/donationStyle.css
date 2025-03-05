@@ -1,0 +1,155 @@
+.container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color:white;
+    padding-left: 20px;
+    padding-right: 20px;
+    width:900px;
+    height:200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:black;
+    border-radius: 25px;
+    
+}
+.master{
+  
+    background-color: darksalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+/* .subContainer
+{
+    display:flex;
+    gap:40px;
+
+} */
+
+.icon{
+    background-color: blueviolet;
+    flex:1
+
+    
+}
+.description{
+    background-color: chocolate;
+    flex:3;
+    flex-wrap: wrap;
+    height:100px;
+    overflow:unset;
+    
+    
+}
+
+.button{
+    background-color: cornflowerblue;
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+
+/* .input{
+    width:300px;
+} */
+
+.donateBtn{
+    padding:10px 30px;
+    background-color: crimson;
+    border-radius: 20px;
+    border:0;
+    outline:none;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:500;
+    
+}
+.popup {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.1s;
+    min-height: 150px; /* Ensures space for extra content */
+    height: auto; /* Adjusts height based on content */
+    overflow: auto; /* Allows scrolling if content exceeds height */
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin:30px 0 10px;
+}
+
+
+.popup .closeBtn{
+    width:100%;
+    margin-top: 50px;
+    padding:10px 0;
+    background: #6fd649;
+    color:white;
+    border:0;
+    outline:none;
+    font-size: 18px;
+    border-radius:4px;
+    cursor: pointer;
+    box-shadow:0 5px 5px rgba(0,0,0,0.2);
+}
+
+.open-popup{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.paymentAmounts{
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    
+}
+
+.paymentAmounts button{
+    color:black;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    background-color:cadetblue;
+    padding:10px 20px;
+    
+    
+}
+.inputAmount{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.inputAmount input{
+  border: none; /* Remove default border */
+  border-bottom: 1px solid black; /* Add underline */
+  outline: none; /* Remove focus outline */
+  padding: 5px; /* Optional: Adds spacing for better appearance */
+  font-size: 16px; /* Optional: Adjust font size */
+  background: transparent;
+  color: black;
+}
+
+.closeX{
+    display: flex;
+    justify-content: end;
+}
