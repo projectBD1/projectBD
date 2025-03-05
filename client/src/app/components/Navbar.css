@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    background-color: blue;
+    background-color: #0077b6;
     width: 100vw;
     justify-content: center;
     align-items: center;
