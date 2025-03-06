@@ -40,7 +40,7 @@ export default function Organizations() {
     setVisible(true);
   };
   const handleCheckout = async () => {
-    // if (!paddle) return alert('Paddle not intialized');
+    //if (!paddle) return alert('Paddle not intialized');
     console.log('value is: ', value);
     const response = await fetch('http://localhost:3000/payment', {
       method: 'POST',
