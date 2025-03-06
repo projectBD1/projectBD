@@ -1,7 +1,6 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    background-color: #0077b6;
     width: 100vw;
     height: 70px;
     justify-content: center;
