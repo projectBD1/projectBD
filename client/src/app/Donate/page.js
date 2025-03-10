@@ -1,6 +1,7 @@
 import Payment from './payment';
 import Organizations from './Components/organizations';
 import Navbar from '../components/Navbar';
+import NormalNavbar from '../components/NormalNavbar';
 import './styles/page.css'
 export default function PayMe() {
   return (
@@ -9,7 +10,7 @@ export default function PayMe() {
       <Payment/>
       <h1>Dynamic payment</h1>
       <DynamicPayment/> */}
-      <Navbar/>
+      <NormalNavbar/>
       <Organizations/>
       
 
