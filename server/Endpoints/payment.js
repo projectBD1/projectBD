@@ -45,8 +45,9 @@ router.post('/', async (req, res) => {
     productName,
     priceDescription,
     productDescription,
-  } = req.body;
-  console.log('Amount is', value);
+  } = req.body
+  console.log('Amount is',value );
+  console.log("Price name: ", priceName)
   let finalValue = value.replace(/[^0-9]/g, '');
   if (finalValue === value) {
     Number(finalValue)
