@@ -13,6 +13,8 @@
     z-index: 1000;
     position: relative;
     color: white;
+    background-color: #0077b6; /* Solid color when scrolled */
+
 }
 
 .navbar:not(.scrolled) {

@@ -1,0 +1,103 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    z-index: 1000;
+    position: relative;
+    color: white;
+}
+
+.navbar:not(.scrolled) {
+    height: 100px;
+}
+
+
+.navbar.scrolled {
+    background-color: #0077b6; /* Solid color when scrolled */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect for visibility */
+}
+
+.navbar-container {
+    width: 100vw;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    z-index: 1000;
+}
+.navbar-container:not(.scrolled) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    height: 200px;
+}
+
+.navbar-logo {
+    height: 50px;
+}
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 50px;
+    align-items: center;
+    font-size: 17px;
+}
+.navbar-donate-button {
+    padding: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #e67e22;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    color: white;
+}
+
+.navbar-hamburger{
+    height: 50px;
+
+}
+
+
+@media(max-width: 1200px) {
+    .navbar {
+        gap: 10vw;
+        justify-content: flex-start;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .navbar-links {
+        gap: 3vw;
+    }
+}
+
+
+@media(min-width: 801px) {
+    .navbar-hamburger{
+        display: none;
+    }
+}
+
+@media(max-width: 800px) {
+    .navbar{
+        justify-content: space-between; /* This ensures space between the elements */
+    }
+    .navbar-hamburger {
+       margin-right: 5px;
+        
+    }
+    .navbar-links{
+        display: none;
+    }
+}
