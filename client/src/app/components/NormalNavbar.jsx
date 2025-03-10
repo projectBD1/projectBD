@@ -1,6 +1,6 @@
 'use client';
 
-import './Navbar.css'
+import './NormalNavbar.css'
 import { useState, useEffect } from 'react';
 
 const NormalNavbar = () => {

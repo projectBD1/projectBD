@@ -15,7 +15,7 @@
 }
 .master{
   
-    background-color: darksalmon;
+    background-color: rgb(40, 83, 45);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,13 +30,13 @@
 } */
 
 .icon{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     flex:1
 
     
 }
 .description{
-    background-color: chocolate;
+    /* background-color: chocolate; */
     flex:3;
     flex-wrap: wrap;
     height:100px;
@@ -46,7 +46,7 @@
 }
 
 .button{
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     flex:1;
     display: flex;
     justify-content: flex-end;
@@ -152,4 +152,8 @@
 .closeX{
     display: flex;
     justify-content: end;
+}
+
+.sunflowerImage{
+    border-radius: 30px;
 }
