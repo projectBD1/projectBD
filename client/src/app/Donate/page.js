@@ -7,6 +7,12 @@ import Body from './Components/body';
 import './styles/page.css';
 
 export default function PayMe() {
+  // const scrollToMasterSection = () => {
+  //   const masterSection = document.getElementById('master');
+  //   if (masterSection) {
+  //     masterSection.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
   return (
     <div className="pageContainer">
       {/* <h1>Standard pay</h1>
@@ -22,6 +28,11 @@ export default function PayMe() {
         </div>
       </div>
       <Body />
+      <div className="organizationsTitle">
+        <div className="subOrg">
+          <h1>Urgent Donations</h1>
+        </div>
+      </div>
       <Organizations />
     </div>
   );

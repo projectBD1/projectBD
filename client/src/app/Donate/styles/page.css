@@ -1,5 +1,22 @@
 .pageContainer{
-    background-color: rgb(40, 83, 45);
+    background-color: white;
     width:100vw;
     height:100vh;
+}
+
+.organizationsTitle{
+    display: flex;
+    flex-direction: column;
+    width:vw;
+    /* height:60px; */
+    color:black;
+    background-color: white;
+    
+
+    
+}
+.subOrg{
+    margin-left: 125px;
+    margin-top: 60px;
+
 }

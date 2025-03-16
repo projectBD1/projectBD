@@ -1,7 +1,8 @@
 .container{
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color:white;
+
+    background-color:#F8EFE0;
     padding-left: 20px;
     padding-right: 20px;
     width:900px;
@@ -15,12 +16,13 @@
 }
 .master{
   
-    background-color: rgb(40, 83, 45);
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap:20px;
+    padding-top: 20px;
 }
 /* .subContainer
 {
@@ -128,7 +130,6 @@
     color:black;
     border-radius: 10px;
     cursor: pointer;
-    
     background-color:cadetblue;
     padding:10px 20px;
     
@@ -162,7 +163,7 @@
     display: flex;
     width:100vw;
     height:30%vh;
-    background-color: #6fd649;
+    background-color: white;
     align-items: center;
     justify-content: center;
     margin-top:20px;
@@ -177,47 +178,92 @@
     border-radius: 30px;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-image: url('../images/helpinghands-6146693.jpg');
     background-size: cover;
     background-position: center;  /* Centers the image */
     background-repeat: no-repeat;
-    color:#007bff;
-    font-size: 50px;
+    color:#0D47A1;
+    font-size: 150px;
     margin-bottom: 30px;
+    flex-direction: column;
     
     
   
 }
 
-
+.donateButton{
+    /* background-color: #0D47A1; */
+    width:1400px;
+    height: 200px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: flex-end;
+}
+.donateButton button{
+    align-self: flex-end;
+    padding:10px 30px;
+    background-color: #004830;
+    border-radius: 20px;
+    border:0;
+    outline:none;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:500;
+}
+.call{
+    margin-top: 150px;
+}
 .body{
     width:100vw;
     height:300px;
-    background-color: aqua;
+    background-color: white;
     display: flex;
     justify-content: center;
     gap:100px;
+    padding-top:20px;
+    
 }
 .bodyTitle{
     display: flex;
     flex-direction: column;
     width:vw;
     height:60px;
-    background-color: darkolivegreen;
+    background-color: white;
 }
 .subBodyTitle{
     margin-left: 125px;
+    
+}
+.subBodyTitle p{
+    margin-left:0px;
+    color:#4a4e69;
+}
+.subBodyTitle h1{
+    color: black;
 }
 .tip1, .tip2, .tip3{
-    background-color:blueviolet;
+    display: flex;
+    background-color:#edede9;
     width:400px;
     height:300px;
     border-radius: 30px;
     justify-content: center;
-    align-items: center;
-    /* center vertically and horizontally the tips */
-    
+    flex-direction: column;
+    color: #4a4e69;
     
 }
 
+
+p{
+    margin-left: 20px;
+    
+}
+
+span{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    
+}
 
