@@ -1,7 +1,7 @@
 'use client';
 import '../styles/donationStyle.css';
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { initializePaddle } from '@paddle/paddle-js';
 import sunflowerImg from '../images/sunflower-3304.jpg'
 import blueflowerImg from '../images/BlueFlower-985266.jpg'
@@ -16,7 +16,7 @@ export default function Organizations() {
   const [productName, setProductName] = useState('');
   const [productDescription, setProductDescription] = useState('');
   const [visible, setVisible] = useState(false);
-
+  const masterSectionRef=useRef(false)
   //initializing paddle using useeffect, setting environment to sandbox so we dont get charged actually
   useEffect(() => {
     initializePaddle({
@@ -74,9 +74,14 @@ export default function Organizations() {
     // setProductDescription();
     // setProductName();
   };
+  // const scrollToMasterSection=()=>{
+  //   if(masterSectionRef.current){
+  //     masterSectionRef.current.scrollIntoView({behavior: 'smooth'})
+  //   }
+  // }
   return (
-    <div className="master">
-      <div className="container">
+    <div className="master" id="masterSection" ref={masterSectionRef}>
+      <div className="container" >
         <div className="icon"><Image src={sunflowerImg} className='sunflowerImage' alt="An image of a sunflower" width={100} height={100}/></div>
         <div className="description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
