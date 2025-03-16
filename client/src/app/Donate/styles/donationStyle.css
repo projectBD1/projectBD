@@ -157,3 +157,67 @@
 .sunflowerImage{
     border-radius: 30px;
 }
+
+.headerMaster{
+    display: flex;
+    width:100vw;
+    height:30%vh;
+    background-color: #6fd649;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom: 20px;
+    
+}
+
+.header{
+    width:1400px;
+    height:600px;
+    background-color: #F8EFE0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/helpinghands-6146693.jpg');
+    background-size: cover;
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;
+    color:#007bff;
+    font-size: 50px;
+    margin-bottom: 30px;
+    
+    
+  
+}
+
+
+.body{
+    width:100vw;
+    height:300px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    gap:100px;
+}
+.bodyTitle{
+    display: flex;
+    flex-direction: column;
+    width:vw;
+    height:60px;
+    background-color: darkolivegreen;
+}
+.subBodyTitle{
+    margin-left: 125px;
+}
+.tip1, .tip2, .tip3{
+    background-color:blueviolet;
+    width:400px;
+    height:300px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    /* center vertically and horizontally the tips */
+    
+    
+}
+
+
