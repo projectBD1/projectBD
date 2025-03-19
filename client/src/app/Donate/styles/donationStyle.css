@@ -1,28 +1,36 @@
-.container{
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-    background-color:#F8EFE0;
-    padding-left: 20px;
-    padding-right: 20px;
-    width:900px;
-    height:200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color:black;
-    border-radius: 25px;
-    
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f8efe0;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 900px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  border-radius: 25px;
 }
-.master{
-  
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap:20px;
-    padding-top: 20px;
+@media (max-width: 414px) {
+  .container {
+    width: 400px;
+  }
+  .description {
+    overflow: hidden;
+    text-overflow: clip;
+    background-color: #004830;
+  }
+}
+
+.master {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
 }
 /* .subContainer
 {
@@ -31,116 +39,105 @@
 
 } */
 
-.icon{
-    /* background-color: blueviolet; */
-    flex:1
-
-    
+.icon {
+  /* background-color: blueviolet; */
+  flex: 1;
 }
-.description{
-    /* background-color: chocolate; */
-    flex:3;
-    flex-wrap: wrap;
-    height:100px;
-    overflow:unset;
-    
-    
+.description {
+  /* background-color: chocolate; */
+  flex: 3;
+  flex-wrap: wrap;
+  height: 100px;
+  overflow: unset;
 }
 
-.button{
-    /* background-color: cornflowerblue; */
-    flex:1;
-    display: flex;
-    justify-content: flex-end;
-    
-    
+.button {
+  /* background-color: cornflowerblue; */
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* .input{
     width:300px;
 } */
 
-.donateBtn{
-    padding:10px 30px;
-    background-color: crimson;
-    border-radius: 20px;
-    border:0;
-    outline:none;
-    cursor:pointer;
-    font-size:18px;
-    font-weight:500;
-    
+.donateBtn {
+  padding: 10px 30px;
+  background-color: crimson;
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
 }
 .popup {
-    width: 400px;
-    background-color: #fff;
-    border-radius: 6px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
-    text-align: center;
-    padding: 30px;
-    color: #333;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.1s;
-    min-height: 150px; /* Ensures space for extra content */
-    height: auto; /* Adjusts height based on content */
-    overflow: auto; /* Allows scrolling if content exceeds height */
-    display: flex;
-    flex-direction: column;
-    gap:20px;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.1s;
+  min-height: 150px; /* Ensures space for extra content */
+  height: auto; /* Adjusts height based on content */
+  overflow: auto; /* Allows scrolling if content exceeds height */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.popup h2{
-    font-size: 38px;
-    font-weight: 500;
-    margin:30px 0 10px;
+.popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
 }
 
-
-.popup .closeBtn{
-    width:100%;
-    margin-top: 50px;
-    padding:10px 0;
-    background: #6fd649;
-    color:white;
-    border:0;
-    outline:none;
-    font-size: 18px;
-    border-radius:4px;
-    cursor: pointer;
-    box-shadow:0 5px 5px rgba(0,0,0,0.2);
+.popup .closeBtn {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: white;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.open-popup{
-    visibility: visible;
-    top:50%;
-    transform: translate(-50%,-50%) scale(1);
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
 }
 
-.paymentAmounts{
-    display:flex;
-    justify-content: center;
-    gap:10px;
-    
+.paymentAmounts {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-.paymentAmounts button{
-    color:black;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color:cadetblue;
-    padding:10px 20px;
-    
-    
+.paymentAmounts button {
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: cadetblue;
+  padding: 10px 20px;
 }
-.inputAmount{
-    display: flex;
-    justify-content: center;
-    gap:10px;
+.inputAmount {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
-.inputAmount input{
+.inputAmount input {
   border: none; /* Remove default border */
   border-bottom: 1px solid black; /* Add underline */
   outline: none; /* Remove focus outline */
@@ -150,120 +147,132 @@
   color: black;
 }
 
-.closeX{
-    display: flex;
-    justify-content: end;
+.closeX {
+  display: flex;
+  justify-content: end;
 }
 
-.sunflowerImage{
-    border-radius: 30px;
+.sunflowerImage {
+  border-radius: 30px;
 }
 
-.headerMaster{
-    display: flex;
-    width:100vw;
-    height:30%vh;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-    margin-top:20px;
-    margin-bottom: 20px;
-    
+.headerMaster {
+  display: flex;
+  width: 100vw;
+  height: 30%vh;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.header{
-    width:1400px;
-    height:600px;
-    background-color: #F8EFE0;
-    border-radius: 30px;
+.header {
+  width: 1400px;
+  height: 600px;
+  background-color: #f8efe0;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/helpinghands-6146693.jpg');
+  background-size: cover;
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  color: #0d47a1;
+  font-size: 150px;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+@media (max-width: 414px) {
+  .header {
+    width: 400px;
+    color: red;
+    font-size: 89px;
+  }
+}
+
+.donateButton {
+  /* background-color: #0D47A1; */
+  width: 1400px;
+  height: 200px;
+  margin-right: 70px;
+  display: flex;
+  justify-content: flex-end;
+}
+.donateButton button {
+  align-self: flex-end;
+  padding: 10px 30px;
+  background-color: #004830;
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+.call {
+  margin-top: 150px;
+}
+.body {
+  width: 100vw;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 20px;
+}
+.bodyTitle {
+  display: flex;
+  flex-direction: column;
+  width: vw;
+  height: 60px;
+  background-color: white;
+}
+.subBodyTitle {
+  margin-left: 125px;
+}
+.subBodyTitle p {
+  margin-left: 0px;
+  color: #4a4e69;
+}
+.subBodyTitle h1 {
+  color: black;
+}
+@media (max-width: 414px) {
+  .subBodyTitle {
+    margin-left: 7px;
+  }
+}
+.tip1,
+.tip2,
+.tip3 {
+  display: flex;
+  background-color: #edede9;
+  width: 400px;
+  height: 300px;
+  border-radius: 30px;
+  justify-content: center;
+  flex-direction: column;
+  color: #4a4e69;
+}
+@media (max-width: 414px) {
+  .body {
+    margin-top: 100px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('../images/helpinghands-6146693.jpg');
-    background-size: cover;
-    background-position: center;  /* Centers the image */
-    background-repeat: no-repeat;
-    color:#0D47A1;
-    font-size: 150px;
-    margin-bottom: 30px;
     flex-direction: column;
-    
-    
-  
+    gap: 30px;
+    margin-left: 7px;
+  }
 }
 
-.donateButton{
-    /* background-color: #0D47A1; */
-    width:1400px;
-    height: 200px;
-    margin-right: 70px;
-    display: flex;
-    justify-content: flex-end;
-}
-.donateButton button{
-    align-self: flex-end;
-    padding:10px 30px;
-    background-color: #004830;
-    border-radius: 20px;
-    border:0;
-    outline:none;
-    cursor:pointer;
-    font-size:18px;
-    font-weight:500;
-}
-.call{
-    margin-top: 150px;
-}
-.body{
-    width:100vw;
-    height:300px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    gap:100px;
-    padding-top:20px;
-    
-}
-.bodyTitle{
-    display: flex;
-    flex-direction: column;
-    width:vw;
-    height:60px;
-    background-color: white;
-}
-.subBodyTitle{
-    margin-left: 125px;
-    
-}
-.subBodyTitle p{
-    margin-left:0px;
-    color:#4a4e69;
-}
-.subBodyTitle h1{
-    color: black;
-}
-.tip1, .tip2, .tip3{
-    display: flex;
-    background-color:#edede9;
-    width:400px;
-    height:300px;
-    border-radius: 30px;
-    justify-content: center;
-    flex-direction: column;
-    color: #4a4e69;
-    
+p {
+  margin-left: 20px;
 }
 
-
-p{
-    margin-left: 20px;
-    
+span {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
 }
-
-span{
-    font-size: 30px;
-    font-weight: bold;
-    color: black;
-    
-}
-
