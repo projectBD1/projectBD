@@ -1,0 +1,146 @@
+/* General Container */
+.container {
+    background-color: #1f2937; /* bg-gray-900 */
+    color: #d1d5db; /* text-gray-300 */
+    min-height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  /* Max Width Container */
+  .max-width-container {
+    max-width: 1280px; /* Similar to max-w-7xl */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  /* Title Styling */
+  .title {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 700; /* font-bold */
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #f3f4f6; /* text-gray-100 */
+  }
+  
+  /* Intro Text */
+  .intro-text {
+    font-size: 1.125rem; /* text-lg */
+    text-align: center;
+    color: #9ca3af; /* text-gray-400 */
+    line-height: 1.75;
+    margin-top: 1rem;
+  }
+  
+  /* Section Styling */
+  .section {
+    margin-top: 4rem; /* mt-16 */
+    padding: 3rem;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .section-content {
+    padding: 2rem;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .subtitle {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 600; /* font-semibold */
+    color: #f3f4f6;
+  }
+  
+  .section-text {
+    color: #9ca3af; /* text-gray-400 */
+    line-height: 1.75;
+    margin-top: 1rem;
+  }
+  
+  .section-list {
+    list-style-type: disc;
+    padding-left: 2rem;
+    color: #9ca3af; /* text-gray-400 */
+    margin-top: 1rem;
+  }
+  
+  /* Hover Effect */
+  .hover-effect {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .hover-effect:hover {
+    transform: translateY(-4px); /* translate -1 on the Y axis */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* shadow effect */
+  }
+  
+  /* Religious Persecution Section */
+  .religious-persecution-section {
+    padding-top: 2rem;
+
+  }
+  
+  .section-background {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .section-content {
+    position: absolute;
+    top: 48%;
+    right: 5%;
+    left: 5%;
+    background-color: rgba(31, 41, 47, 0.7); /* Gray overlay */
+    padding: 2rem;
+    border-radius: 0.375rem; /* Rounded corners */
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #9ca3af; /* text-gray-400 */
+  }
+  
+  .section-date {
+    color: #6b7280; /* text-gray-500 */
+  }
+  
+  h2.subtitle {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .section-text {
+    font-size: 1rem;
+    color: #e5e7eb; /* text-gray-300 */
+    line-height: 1.75;
+    margin-top: 1rem;
+  }
+  
+  /* Call to Action Section */
+  ul.section-list {
+    list-style-type: disc;
+    padding-left: 2rem;
+    color: #9ca3af; /* text-gray-400 */
+    margin-top: 1rem;
+  }
+  
+  .section-list li {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  
