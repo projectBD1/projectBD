@@ -21,13 +21,16 @@ export default function PayMe() {
       <DynamicPayment/> */}
       <NormalNavbar />
       <Header />
-      <div className="bodyTitle">
-        <div className="subBodyTitle">
-          <h1>Expore Ways to Make an Impact</h1>
-          <p>Donate, Advocate, and Support Those in Need.</p>
+      <div className="supBodyTitle">
+        <div className="bodyTitle">
+          <div className="subBodyTitle">
+            <h1>Expore Ways to Make an Impact</h1>
+            <p>Donate, Advocate, and Support Those in Need.</p>
+          </div>
         </div>
+
+        <Body />
       </div>
-      <Body />
       <div className="organizationsTitle">
         <div className="subOrg">
           <h1>Urgent Donations</h1>

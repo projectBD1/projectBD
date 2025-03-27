@@ -1,3 +1,6 @@
+body{
+  background-color: white;
+}
 .container {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -12,16 +15,12 @@
   color: black;
   border-radius: 25px;
 }
-@media (max-width: 414px) {
-  .container {
-    width: 400px;
-  }
-  .description {
-    overflow: hidden;
-    text-overflow: clip;
-    background-color: #004830;
-  }
-}
+
+
+
+
+
+
 
 .master {
   background-color: white;
@@ -184,13 +183,7 @@
   margin-bottom: 30px;
   flex-direction: column;
 }
-@media (max-width: 414px) {
-  .header {
-    width: 400px;
-    color: red;
-    font-size: 89px;
-  }
-}
+
 
 .donateButton {
   /* background-color: #0D47A1; */
@@ -211,6 +204,8 @@
   font-size: 18px;
   font-weight: 500;
 }
+
+
 .call {
   margin-top: 150px;
 }
@@ -240,11 +235,8 @@
 .subBodyTitle h1 {
   color: black;
 }
-@media (max-width: 414px) {
-  .subBodyTitle {
-    margin-left: 7px;
-  }
-}
+
+
 .tip1,
 .tip2,
 .tip3 {
@@ -257,15 +249,8 @@
   flex-direction: column;
   color: #4a4e69;
 }
-@media (max-width: 414px) {
-  .body {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-left: 7px;
-  }
-}
+
+
 
 p {
   margin-left: 20px;
@@ -276,3 +261,255 @@ span {
   font-weight: bold;
   color: black;
 }
+
+@media (max-width: 480px) {
+  .container {
+    width: 400px;
+    overflow: scroll;
+  }
+  .description {
+    background-color: #004830;
+    
+  }
+  .header {
+    width: 400px;
+    color: red;
+    font-size: 89px;
+  }
+  .donateButton {
+    /* background-color: #0D47A1; */
+    width: 420px;
+    height: 200px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .donateButton button {
+    align-self: flex-end;
+    padding: 10px 30px;
+    background-color: #004830;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .subBodyTitle {
+    margin-left: 15px;
+  }
+  .donateButton {
+    /* background-color: #0D47A1; */
+    width: 420px;
+    height: 200px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .donateButton button {
+    align-self: flex-end;
+    padding: 10px 30px;
+    background-color: #004830;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .body {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 15px;
+  }
+  .donateButton {
+    /* background-color: #0D47A1; */
+    width: 420px;
+    height: 200px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .donateButton button {
+    align-self: flex-end;
+    padding: 10px 30px;
+    background-color: #004830;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+}
+@media (max-width: 400px) {
+  .container {
+    width: 350px;
+    overflow: scroll;
+  }
+  .description {
+    background-color: #004830;
+    
+  }
+  .header {
+    width: 350px;
+    color: red;
+    font-size: 75px;
+  }
+  .donateButton {
+    /* background-color: #0D47A1; */
+    width: 420px;
+    height: 200px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .donateButton button {
+    align-self: flex-end;
+    padding: 10px 30px;
+    background-color: #004830;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .subBodyTitle {
+    padding-left: 7px;
+    
+    
+  }
+  .supBodyTitle{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
+  .donateButton {
+    /* background-color: #0D47A1; */
+    width: 420px;
+    height: 200px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .donateButton button {
+    align-self: flex-end;
+    padding: 10px 30px;
+    background-color: #004830;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .body {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 7px;
+
+  }
+  .tip1,
+  .tip2,
+  .tip3 {
+    display: flex;
+    background-color: #edede9;
+    width: 360px;
+    height: 300px;
+    border-radius: 30px;
+    justify-content: center;
+    flex-direction: column;
+    color: #4a4e69;
+  }
+  .donateButton {
+    /* background-color: #0D47A1; */
+    width: 420px;
+    height: 200px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .donateButton button {
+    align-self: flex-end;
+    padding: 10px 30px;
+    background-color: #004830;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+ 
+}
+
+ @media(width:768px),(width:820px){
+  .header{
+    width:750px;
+  }
+  .subBodyTitle{
+    margin-left: 7px;
+  }
+  .body{
+    display: flex;
+    gap:7px;
+    margin-left:0px ;
+  }
+  .container{
+    width:600px;
+    overflow: scroll;
+  }
+} 
+
+@media(width:912px),(width:1024px){
+  .header{
+    width:895px;
+  }
+  .subBodyTitle{
+    margin-left: 7px;
+  }
+  .body{
+    display: flex;
+    gap:7px;
+    margin-left:0px ;
+  }
+  .container{
+    width:600px;
+    overflow: scroll;
+  }
+} 
+
+@media(width:1024px){
+  .header{
+    width:990px;
+    margin-right: 15px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+  }
+  .subBodyTitle{
+    margin-left: 7px;
+  }
+  .body{
+    display: flex;
+    gap:7px;
+    margin-left:0px ;
+  }
+  .container{
+    width:900px;
+    scrollbar-width: none;
+
+  }
+} 
+
+
+
+
+
+
