@@ -1,0 +1,10 @@
+
+.map-container {
+    padding-top: 80px; /* Adjust this value to fit the height of your navbar */
+}
+.map-title {
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    font-weight: bold; /* Equivalent to font-bold */
+    margin-top: 1rem;  /* Equivalent to my-4 (my-4 means margin top and bottom 1rem) */
+    margin-bottom: 1rem;
+}

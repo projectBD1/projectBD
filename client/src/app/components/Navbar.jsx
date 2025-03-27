@@ -1,6 +1,7 @@
 'use client';
 
 import './Navbar.css'
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -29,12 +30,12 @@ const Navbar = () => {
             <img className='navbar-logo' src='next.svg'/>
             <div>
                 <ul className='navbar-links'>
-                    <li>Home</li>
-                    <li>About the Genocide</li>
-                    <li>Map & Report</li>
-                    <li>Blog</li>
-                    <li>Contact Us</li>
-                    <button className='navbar-donate-button'>Donate</button>
+                    <li><Link href= "/">Home</Link></li>
+                    <li><Link href="/about">About the Genocide</Link></li>
+                    <li><Link href="/map">Map & Report</Link></li>
+                    <li><Link href= "/blog">Blog</Link></li>
+                    <li><Link href= "/contact">Contact Us</Link></li>
+                    <button className='navbar-donate-button'><Link href= "/Donate">Donate</Link></button>
                 </ul>
             <img className='navbar-hamburger' src='Hamburger_icon1.png'/>
             </div>
