@@ -1,4 +1,4 @@
-body{
+body {
   background-color: white;
 }
 .container {
@@ -7,7 +7,7 @@ body{
   background-color: #f8efe0;
   padding-left: 20px;
   padding-right: 20px;
-  width: 900px;
+  width: 85%;
   height: 200px;
   display: flex;
   justify-content: space-between;
@@ -16,14 +16,9 @@ body{
   border-radius: 25px;
 }
 
-
-
-
-
-
-
 .master {
   background-color: white;
+  width:100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +153,7 @@ body{
 .headerMaster {
   display: flex;
   width: 100vw;
-  height: 30%vh;
+  height: auto;
   background-color: white;
   align-items: center;
   justify-content: center;
@@ -167,7 +162,8 @@ body{
 }
 
 .header {
-  width: 1400px;
+  width: 85%;
+  max-width:85%;
   height: 600px;
   background-color: #f8efe0;
   border-radius: 30px;
@@ -183,7 +179,6 @@ body{
   margin-bottom: 30px;
   flex-direction: column;
 }
-
 
 .donateButton {
   /* background-color: #0D47A1; */
@@ -205,28 +200,28 @@ body{
   font-weight: 500;
 }
 
-
 .call {
   margin-top: 150px;
 }
 .body {
-  width: 100vw;
+  width: 100%;
   height: 300px;
   background-color: white;
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap:100px;
   padding-top: 20px;
 }
 .bodyTitle {
   display: flex;
   flex-direction: column;
-  width: vw;
+  width: 100%;
   height: 60px;
   background-color: white;
 }
 .subBodyTitle {
   margin-left: 125px;
+  width:90%;
 }
 .subBodyTitle p {
   margin-left: 0px;
@@ -236,6 +231,13 @@ body{
   color: black;
 }
 
+.supBodyTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width:100%;
+ 
+}
 
 .tip1,
 .tip2,
@@ -250,8 +252,6 @@ body{
   color: #4a4e69;
 }
 
-
-
 p {
   margin-left: 20px;
 }
@@ -264,15 +264,15 @@ span {
 
 @media (max-width: 480px) {
   .container {
-    width: 400px;
+
+    width: 85%;
     overflow: scroll;
   }
   .description {
     background-color: #004830;
-    
   }
   .header {
-    width: 400px;
+    width: 95%;
     color: red;
     font-size: 89px;
   }
@@ -297,6 +297,7 @@ span {
   }
   .subBodyTitle {
     margin-left: 15px;
+    width:90%;
   }
   .donateButton {
     /* background-color: #0D47A1; */
@@ -323,6 +324,7 @@ span {
     flex-direction: column;
     gap: 30px;
     margin-left: 15px;
+    width:100%;
   }
   .donateButton {
     /* background-color: #0D47A1; */
@@ -343,21 +345,30 @@ span {
     font-size: 18px;
     font-weight: 500;
   }
-
 }
 @media (max-width: 400px) {
   .container {
-    width: 350px;
+    width:85%;
+    
     overflow: scroll;
   }
   .description {
     background-color: #004830;
-    
   }
   .header {
-    width: 350px;
+    width: 100% ;
     color: red;
-    font-size: 75px;
+    font-size: 60px;
+  }
+  .headerMaster {
+    display: flex;
+    width: 100vw;
+    height: 30%vh;
+    background-color:#0d47a1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .donateButton {
     /* background-color: #0D47A1; */
@@ -380,13 +391,12 @@ span {
   }
   .subBodyTitle {
     padding-left: 7px;
-    
-    
+    width:90%;
   }
-  .supBodyTitle{
+  .supBodyTitle {
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
   }
   .donateButton {
     /* background-color: #0D47A1; */
@@ -413,7 +423,8 @@ span {
     flex-direction: column;
     gap: 30px;
     margin-left: 7px;
-
+    width:100%;
+    
   }
   .tip1,
   .tip2,
@@ -446,70 +457,67 @@ span {
     font-size: 18px;
     font-weight: 500;
   }
-
- 
 }
 
- @media(width:768px),(width:820px){
-  .header{
-    width:750px;
+@media (width: 768px), (width: 820px) {
+  .header {
+    width: 95%;
   }
-  .subBodyTitle{
+  .subBodyTitle {
     margin-left: 7px;
+    width:90%;
   }
-  .body{
+  .body {
     display: flex;
-    gap:7px;
-    margin-left:0px ;
+    gap: 7px;
+    margin-left: 0px;
+    width:100%;
   }
-  .container{
-    width:600px;
+  .container {
+    width: 85%;
     overflow: scroll;
   }
-} 
+}
 
-@media(width:912px),(width:1024px){
-  .header{
-    width:895px;
+@media (width: 912px), (width: 1024px) {
+  .header {
+    width: 95%;
   }
-  .subBodyTitle{
+  .subBodyTitle {
     margin-left: 7px;
+    width:90%
   }
-  .body{
+  .body {
     display: flex;
-    gap:7px;
-    margin-left:0px ;
+    gap: 7px;
+    margin-left: 0px;
+    width:100%;
   }
-  .container{
-    width:600px;
+  .container {
+    width: 85%;
     overflow: scroll;
   }
-} 
+}
 
-@media(width:1024px){
-  .header{
-    width:990px;
+@media (width: 1024px) {
+  .header {
+    width: 95%;
     margin-right: 15px;
     /* margin-left: 20px;
     margin-right: 20px; */
   }
-  .subBodyTitle{
+  .subBodyTitle {
     margin-left: 7px;
+    width:90%;
   }
-  .body{
+  .body {
     display: flex;
-    gap:7px;
-    margin-left:0px ;
+    gap: 7px;
+    margin-left: 0px;
+    width:100%;
   }
-  .container{
-    width:900px;
+  .container {
+    width: 85%;
     scrollbar-width: none;
-
   }
-} 
-
-
-
-
-
-
+}

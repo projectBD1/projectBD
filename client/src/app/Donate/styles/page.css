@@ -6,8 +6,8 @@
 
 .organizationsTitle{
     display: flex;
+    width:100%;
     flex-direction: column;
-    width:vw;
     /* height:60px; */
     color:black;
     background-color: white;
