@@ -1,6 +1,6 @@
 body {
-  background-color: white;
-}
+  background-color: white;}
+/* }
 .container {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -14,7 +14,7 @@ body {
   align-items: center;
   color: black;
   border-radius: 25px;
-}
+} */
 
 .master {
   background-color: white;
@@ -32,19 +32,18 @@ body {
     gap:40px;
 
 } */
-
+/* 
 .icon {
-  /* background-color: blueviolet; */
+  
   flex: 1;
 }
 .description {
-  /* background-color: chocolate; */
   flex: 3;
   flex-wrap: wrap;
   height: 100px;
   overflow: unset;
-}
-
+} 
+*/
 .button {
   /* background-color: cornflowerblue; */
   flex: 1;
@@ -67,7 +66,7 @@ body {
   font-weight: 500;
 }
 .popup {
-  width: 400px;
+  width: 30%;
   background-color: #fff;
   border-radius: 6px;
   position: absolute;
@@ -109,6 +108,7 @@ body {
 
 .open-popup {
   visibility: visible;
+  font-size: 20px;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
 }
@@ -123,7 +123,7 @@ body {
   color: black;
   border-radius: 10px;
   cursor: pointer;
-  background-color: cadetblue;
+  background-color: #E57373 !important;
   padding: 10px 20px;
 }
 .inputAmount {
@@ -145,10 +145,10 @@ body {
   display: flex;
   justify-content: end;
 }
-
+/* 
 .sunflowerImage {
   border-radius: 30px;
-}
+} */
 
 .headerMaster {
   display: flex;
@@ -159,6 +159,7 @@ body {
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  background-color: #E57373;
 }
 
 .header {
@@ -174,15 +175,16 @@ body {
   background-size: cover;
   background-position: center; /* Centers the image */
   background-repeat: no-repeat;
-  color: #0d47a1;
+  color: #3B4D32;
   font-size: 150px;
   margin-bottom: 30px;
   flex-direction: column;
+  position:relative;
 }
 
 .donateButton {
   /* background-color: #0D47A1; */
-  width: 1400px;
+  width:90%;
   height: 200px;
   margin-right: 70px;
   display: flex;
@@ -198,12 +200,14 @@ body {
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
+  position:absolute;
+
 }
 
 .call {
   margin-top: 150px;
 }
-.body {
+/* .body {
   width: 100%;
   height: 300px;
   background-color: white;
@@ -260,8 +264,8 @@ span {
   font-size: 30px;
   font-weight: bold;
   color: black;
-}
-
+} */
+/* 
 @media (max-width: 480px) {
   .container {
 
@@ -277,7 +281,6 @@ span {
     font-size: 89px;
   }
   .donateButton {
-    /* background-color: #0D47A1; */
     width: 420px;
     height: 200px;
     margin-right: 70px;
@@ -300,7 +303,6 @@ span {
     width:90%;
   }
   .donateButton {
-    /* background-color: #0D47A1; */
     width: 420px;
     height: 200px;
     margin-right: 70px;
@@ -327,7 +329,6 @@ span {
     width:100%;
   }
   .donateButton {
-    /* background-color: #0D47A1; */
     width: 420px;
     height: 200px;
     margin-right: 70px;
@@ -345,8 +346,8 @@ span {
     font-size: 18px;
     font-weight: 500;
   }
-}
-@media (max-width: 400px) {
+} */
+/* @media (max-width: 400px) {
   .container {
     width:85%;
     
@@ -371,7 +372,6 @@ span {
     margin-bottom: 20px;
   }
   .donateButton {
-    /* background-color: #0D47A1; */
     width: 420px;
     height: 200px;
     margin-right: 70px;
@@ -399,7 +399,6 @@ span {
     gap: 10px;
   }
   .donateButton {
-    /* background-color: #0D47A1; */
     width: 420px;
     height: 200px;
     margin-right: 70px;
@@ -439,7 +438,6 @@ span {
     color: #4a4e69;
   }
   .donateButton {
-    /* background-color: #0D47A1; */
     width: 420px;
     height: 200px;
     margin-right: 70px;
@@ -503,8 +501,7 @@ span {
   .header {
     width: 95%;
     margin-right: 15px;
-    /* margin-left: 20px;
-    margin-right: 20px; */
+   
   }
   .subBodyTitle {
     margin-left: 7px;
@@ -520,4 +517,4 @@ span {
     width: 85%;
     scrollbar-width: none;
   }
-}
+} */
