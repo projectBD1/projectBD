@@ -1,9 +1,11 @@
 import Payment from './payment';
-import Organizations from './Components/organizations';
+// import Organizations from './Components/organizations';
 import Navbar from '../components/Navbar';
 import NormalNavbar from '../components/NormalNavbar';
-import Header from '../Donate/Components/header';
-import Body from './Components/body';
+import Header from './NewComponents/header';
+// import Body from './Components/body';
+import NewBody from './NewComponents/newbody.jsx'
+import NewOrganizations from './NewComponents/neworganizations';
 import './styles/page.css';
 
 export default function PayMe() {
@@ -21,7 +23,10 @@ export default function PayMe() {
       <DynamicPayment/> */}
       <NormalNavbar />
       <Header />
-      <div className="supBodyTitle">
+      <NewBody/>
+      <NewOrganizations/>
+
+      {/* <div className="supBodyTitle">
         <div className="bodyTitle">
           <div className="subBodyTitle">
             <h1>Expore Ways to Make an Impact</h1>
@@ -36,7 +41,7 @@ export default function PayMe() {
           <h1>Urgent Donations</h1>
         </div>
       </div>
-      <Organizations />
+      <Organizations /> */}
     </div>
   );
 }

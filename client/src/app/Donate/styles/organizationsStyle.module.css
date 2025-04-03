@@ -1,0 +1,53 @@
+.organizations {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.title {
+  width: 100%;
+  color: black;
+}
+
+.orgs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  height: 150px;
+  color: black;
+  border: solid;
+  border-radius: 20px;
+  margin: 0 auto;
+  background-color: #f8efe0;
+  border:none;
+
+}
+.iconImg,
+.iconDesc,
+.iconLink {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.iconLink button {
+  align-self: flex-end;
+  padding: 10px 30px;
+  background-color: #E57373;
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.sunflowerImage {
+  border-radius: 30px;
+}
+
