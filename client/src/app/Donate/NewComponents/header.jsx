@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import { initializePaddle } from '@paddle/paddle-js';
 
-
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [paddle, setPaddle] = useState();
@@ -23,12 +22,10 @@ export default function Header() {
     }).then((paddle) => setPaddle(paddle)); //once instance is ready we set it in the state declared above
   }, []);
 
-  
   const handleChange = (event) => {
     setValue(event.target.value);
     setVisible(true);
   };
-
 
   const handleCheckout = async (newvalue) => {
     //if (!paddle) return alert('Paddle not intialized');
@@ -39,7 +36,7 @@ export default function Header() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        value: newvalue, 
+        value: newvalue,
         priceName: priceName,
         productName: productName,
         priceDescription: priceDescription,
@@ -62,88 +59,91 @@ export default function Header() {
     // setProductName();
   };
 
-
   return (
     <div className="headerMaster">
       <div className="header">
-        <div className='call'>Make A Difference</div>
+        <div className="call">Make A Difference</div>
         <div className="donateButton">
-          <button onClick={() => {
-                setIsOpen(true);
-                setPriceDescription('This is price description.');
-                setPriceName('This is price name.');
-                setProductDescription('This is prod description.');
-                setProductName('This is product name');
-              }}>Donate</button>
-               <div className={`popup ${isOpen ? 'open-popup' : ''}`} id="popup">
-              <div className="closeX">
-                <button onClick={() => setIsOpen(false)}>Close</button>
-              </div>
-              <h2>Choose an amount</h2>
-              <div className="paymentAmounts">
-                <button
-                  onClick={() => 
-                    handleCheckout('1.00')
-
-                   
-                    // setPriceDescription('This is price description.');
-                    // setPriceName('This is price name.');
-                    // setProductDescription('This is prod description.');
-                    // setProductName('This is product name');
-                  }
-                >
-                  $1.00
-                </button>
-                <button c
-                  onClick={() => 
-                    handleCheckout('3.00')
-                   
-                    // setPriceDescription('This is price description.');
-                    // setPriceName('This is price name.');
-                    // setProductDescription('This is prod description.');
-                    // setProductName('This is product name');
-                  }
-                >
-                  $3.00
-                </button>
-                <button
-                    onClick={() => 
-                      handleCheckout('5.00')
-                     
-                      // setPriceDescription('This is price description.');
-                      // setPriceName('This is price name.');
-                      // setProductDescription('This is prod description.');
-                      // setProductName('This is product name');
-                    }
-                >
-                  $5.00
-                </button>
-                <button
-                    onClick={() => 
-                      handleCheckout('7.00')
-                     
-                      // setPriceDescription('This is price description.');
-                      // setPriceName('This is price name.');
-                      // setProductDescription('This is prod description.');
-                      // setProductName('This is product name');
-                    }
-                >
-                  $7.00
-                </button>
-              </div>
-              <div className="inputAmount">
-                <p>Custom:</p>
-                <input
-                  onChange={handleChange}
-                  placeholder="Enter amount here."
-                />
-              </div>
-              {visible && (
-                <button className="closeBtn" onClick={()=>handleCheckout(value)}>
-                  Proceed to Checkout
-                </button>
-              )}
+          <button
+            onClick={() => {
+              setIsOpen(true);
+              setPriceDescription('This is price description.');
+              setPriceName('This is price name.');
+              setProductDescription('This is prod description.');
+              setProductName('This is product name');
+            }}
+          >
+            Donate
+          </button>
+          <div className={`popup ${isOpen ? 'open-popup' : ''}`} id="popup">
+            <div className="closeX">
+              <button onClick={() => setIsOpen(false)}>X</button>
             </div>
+            <h2>Choose an amount</h2>
+            <div className="paymentAmounts">
+             
+              <button
+                onClick={
+                  () => handleCheckout('1.00')
+
+                  // setPriceDescription('This is price description.');
+                  // setPriceName('This is price name.');
+                  // setProductDescription('This is prod description.');
+                  // setProductName('This is product name');
+                }
+              >
+                $1.00
+              </button>
+              <button
+                onClick={
+                  () => handleCheckout('3.00')
+
+                  // setPriceDescription('This is price description.');
+                  // setPriceName('This is price name.');
+                  // setProductDescription('This is prod description.');
+                  // setProductName('This is product name');
+                }
+              >
+                $3.00
+              </button>
+              <button
+                onClick={
+                  () => handleCheckout('5.00')
+
+                  // setPriceDescription('This is price description.');
+                  // setPriceName('This is price name.');
+                  // setProductDescription('This is prod description.');
+                  // setProductName('This is product name');
+                }
+              >
+                $5.00
+              </button>
+              <button
+                onClick={
+                  () => handleCheckout('7.00')
+
+                  // setPriceDescription('This is price description.');
+                  // setPriceName('This is price name.');
+                  // setProductDescription('This is prod description.');
+                  // setProductName('This is product name');
+                }
+              >
+                $7.00
+              </button>
+            </div>
+            <div className="inputAmount">
+              <p>Custom:</p>
+              <input onChange={handleChange} placeholder="Enter amount here." />
+            </div>
+            {visible && (
+              <button
+                className="closeBtn"
+                onClick={() => handleCheckout(value)}
+              >
+                Proceed to Checkout
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>
