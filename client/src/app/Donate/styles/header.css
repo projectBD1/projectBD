@@ -159,14 +159,14 @@ body {
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #E57373;
+  background-color: white;
 }
 
 .header {
   width: 85%;
   max-width:85%;
   height: 600px;
-  background-color: #f8efe0;
+  background-color: white;
   border-radius: 30px;
   display: flex;
   align-items: center;
