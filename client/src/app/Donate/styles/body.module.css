@@ -42,3 +42,16 @@
 .title h1{
     color: black;
 }
+@media(max-width:800px){
+    .tips{
+        display: flex;
+        flex-direction: column;
+        height:600px; 
+        margin-bottom: 30px;
+    }
+    .tip1,.tip2,.tip3{
+        height:250px;
+       
+    }
+   
+}

@@ -52,3 +52,15 @@
   border-radius: 30px;
 }
 
+@media (max-width:800px)
+{
+  .iconDesc{
+    overflow: scroll;
+    
+  }
+  .sunflowerImage {
+    width:70;
+    height: 70;
+    
+  }
+}
