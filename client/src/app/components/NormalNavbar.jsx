@@ -24,6 +24,7 @@ const NormalNavbar = () => {
     }, []);
 
     return(
+        <div className={`navbar-container `}>
 
         <div className={`navbar `}>
             <img className='navbar-logo' src='next.svg'/>
@@ -40,5 +41,6 @@ const NormalNavbar = () => {
             </div>
         </div>
 
+        </div>
     )
 }; export default NormalNavbar
