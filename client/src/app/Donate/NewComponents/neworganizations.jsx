@@ -10,6 +10,7 @@ export default function NewOrganizations() {
 
 
   return (
+    <div className={styles.masterOrganizations}>
     <div className={styles.organizations}>
       <div className={styles.title}>
         <h1>Our Partners</h1>
@@ -76,6 +77,7 @@ export default function NewOrganizations() {
           <div className={styles.iconLink}><button>Link</button></div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import styles from '../styles/body.module.css';
 export default function NewBody() {
   return (
+    <div className={styles.masterBody}>
     <div className={styles.body}>
       <div className={styles.title}>
         <h1>Explore Ways to Make an Impact!</h1>
@@ -32,6 +33,7 @@ export default function NewBody() {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }

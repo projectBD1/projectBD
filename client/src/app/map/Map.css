@@ -1,6 +1,7 @@
 
 .map-container {
     padding-top: 80px; /* Adjust this value to fit the height of your navbar */
+    
 }
 .map-title {
     font-size: 1.5rem; /* Equivalent to text-2xl */
