@@ -17,17 +17,8 @@
 
 }
 
-.navbar:not(.scrolled) {
-    height: 100px;
-}
 
-
-.navbar.scrolled {
-    background-color: #0077b6; /* Solid color when scrolled */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect for visibility */
-}
-
-.navbar-container {
+.navbarContainer {
     width: 100vw;
     height: 60px;
     justify-content: center;
@@ -39,15 +30,11 @@
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     z-index: 1000;
 }
-.navbar-container:not(.scrolled) {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
-    height: 200px;
-}
 
-.navbar-logo {
+.navbarLogo {
     height: 50px;
 }
-.navbar-links {
+.navbarLinks {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -55,7 +42,7 @@
     align-items: center;
     font-size: 17px;
 }
-.navbar-donate-button {
+.navbarDonateButton {
     padding: 6px;
     padding-left: 8px;
     padding-right: 8px;
@@ -66,7 +53,7 @@
     color: white;
 }
 
-.navbar-hamburger{
+.navbarHamburger{
     height: 50px;
 
 }
@@ -79,14 +66,14 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    .navbar-links {
+    .navbarLinks {
         gap: 3vw;
     }
 }
 
 
 @media(min-width: 801px) {
-    .navbar-hamburger{
+    .navbarHamburger{
         display: none;
     }
 }
@@ -95,11 +82,11 @@
     .navbar{
         justify-content: space-between; /* This ensures space between the elements */
     }
-    .navbar-hamburger {
+    .navbarHamburger {
        margin-right: 5px;
         
     }
-    .navbar-links{
+    .navbarLinks{
         display: none;
     }
 }

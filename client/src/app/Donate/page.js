@@ -1,7 +1,7 @@
 import Payment from './payment';
 // import Organizations from './Components/organizations';
 import Navbar from '../components/Navbar';
-import NormalNavbar from '../components/NormalNavbar';
+import NormalNavbar from './NewComponents/NormalNavbar.jsx';
 import Header from './NewComponents/header';
 // import Body from './Components/body';
 import NewBody from './NewComponents/newbody.jsx'
@@ -21,7 +21,7 @@ export default function PayMe() {
       <Payment/>
       <h1>Dynamic payment</h1>
       <DynamicPayment/> */}
-      <NormalNavbar />
+      <NormalNavbar/>
       <Header />
       <NewBody/>
       <NewOrganizations/>
