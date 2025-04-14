@@ -20,11 +20,13 @@
 
 .tip1,.tip2,.tip3{
     border: none;
+    width:70%;
     border-radius: 30px;
-    height:200px;
+    height:200px !important;
     background-color: #edede9;
     color:#4a4e69;
     margin-bottom: 20px;
+    font-weight: 550;
 }
 .title{
     width:100%;
