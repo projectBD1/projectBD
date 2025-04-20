@@ -25,6 +25,7 @@
   flex-direction: column;
   gap: 20px;
   padding-top: 20px;
+  
 }
 /* .subContainer
 {
@@ -169,6 +170,7 @@
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-top: 70px;
   background-color: white;
 }
 

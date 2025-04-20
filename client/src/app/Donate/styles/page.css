@@ -2,6 +2,7 @@
     background-color: white;
     width:100vw;
     height:100vh;
+    padding-top: 10px;
 }
 
 .organizationsTitle{
@@ -20,6 +21,11 @@
     margin-top: 60px;
 
 }
+
+/* .navAndHeader{
+    display: flex !important;
+    gap:20px;
+} */
 
 @media (max-width:400px){
     .subOrg{

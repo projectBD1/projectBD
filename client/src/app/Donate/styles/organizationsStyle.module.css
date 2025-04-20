@@ -21,6 +21,7 @@
 }
 
 .container {
+  
   width: 70%;
   display: flex;
   gap: 10px;
@@ -31,6 +32,8 @@
   margin: 0 auto;
   background-color: #f8efe0;
   border:none;
+ 
+  
 
 }
 .iconImg,
