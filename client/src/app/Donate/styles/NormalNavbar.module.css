@@ -13,7 +13,8 @@
     z-index: 1000;
     position: relative;
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
+    
 
 }
 
@@ -29,6 +30,7 @@
     left: 0;
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     z-index: 1000;
+    
 }
 
 .navbarLogo {
