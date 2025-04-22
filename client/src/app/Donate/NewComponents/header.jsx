@@ -44,7 +44,7 @@ export default function Header() {
       }),
     });
     const data = await response.json();
-    if (data.transaction=="Payment Failure"){alert("MUST ENTER VALID AMOUNT")}
+    if (data.transaction=="Payment Failure"){alert("You must enter a valid, non-zero amount. Please try again.")}
     console.log("Data.transaction is: ", data.transaction)
     paddle.Checkout.open({
       transactionId: data.transaction,
