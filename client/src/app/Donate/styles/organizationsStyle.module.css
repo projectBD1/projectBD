@@ -1,8 +1,10 @@
 .organizations {
-  width: 85%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  margin-top: -20px;
+  
 }
 .masterOrganizations{
   background-color: white;
@@ -32,6 +34,7 @@
   margin: 0 auto;
   background-color: #f8efe0;
   border:none;
+  margin-bottom: 20px !important;
  
   
 
@@ -45,6 +48,7 @@
 }
 .iconDesc{
   overflow: scroll;
+  
 }
 .iconLink button {
   align-self: flex-end;
@@ -64,9 +68,18 @@
 
 @media (max-width:800px)
 {
+  .orgs{
+    display: flex;
+    flex-direction: column;
+  }
+  .container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    height:300px;
+  }
   .iconDesc{
-    overflow: scroll;
-    
+    overflow: hidden;    
   }
   .sunflowerImage {
     width:70;
@@ -74,5 +87,4 @@
     
   }
 }
-
 

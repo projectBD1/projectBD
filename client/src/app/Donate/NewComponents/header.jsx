@@ -44,6 +44,8 @@ export default function Header() {
       }),
     });
     const data = await response.json();
+    if (data.transaction=="Payment Failure"){alert("MUST ENTER VALID AMOUNT")}
+    console.log("Data.transaction is: ", data.transaction)
     paddle.Checkout.open({
       transactionId: data.transaction,
       settings: {
@@ -135,6 +137,7 @@ export default function Header() {
               <p>Custom:</p>
               <input onChange={handleChange} placeholder="Enter amount here." />
             </div>
+            <div className='submitPayment'>
             {visible && (
               <button
                 className="closeBtn"
@@ -143,6 +146,7 @@ export default function Header() {
                 Proceed to Checkout
               </button>
             )}
+            </div>
           </div>
         </div>
       </div>
