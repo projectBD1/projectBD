@@ -55,8 +55,9 @@ router.post('/', async (req, res) => {
     finalValue=value*100;
   }
   console.log('Final value: ', finalValue);
+  // if (finalValue==0){return res.json({transaction: "Failure"})}
   Number(finalValue);
-
+  if (finalValue==0){return res.json({transaction: "Payment Failure"})}
   const paddle = new Paddle(process.env.PADDLE_SECRET_TOKEN, {
     environment: Environment.sandbox,
   });
