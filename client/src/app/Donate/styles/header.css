@@ -173,18 +173,15 @@
   display: flex;
   width: 100vw;
   height: auto;
-  background-color: white;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-
   padding-top: 70px;
-  background-color: white;
 }
 
 .header {
   width: 90%;
-  height: 600px;
+  height: 500px;
   background-color: white;
   border-radius: 30px;
   display: flex;

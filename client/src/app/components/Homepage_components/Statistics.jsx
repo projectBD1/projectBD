@@ -6,21 +6,21 @@ const Statistics = () => {
             <h1 className='stat-header'>What is Happening In Bangladesh?</h1>
             <div className='stat-container'>
                 <div className='stat-box box1'>
-                    <img className='stat-box-img' src='temporary_temple.webp'/>
+                    <img className='stat-box-img' src='temporary_temple.webp' loading="lazy"/>
                     <div className='stat-box-text-container'>
                         <h2>Statistic 1</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero dui.</p>
                     </div>
                 </div>
                 <div className='stat-box box2'>
-                    <img className='stat-box-img' src='bangladeshprotest.avif'/>
+                    <img className='stat-box-img' src='bangladeshprotest.avif' loading="lazy"/>
                     <div className='stat-box-text-container'>
                         <h2>Statistic 1</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero dui.</p>
                     </div>
                 </div>
                 <div className='stat-box box3'>
-                    <img className='stat-box-img' src='temporary_temple2.webp'/>
+                    <img className='stat-box-img' src='temporary_temple2.webp' loading="lazy"/>
                     <div className='stat-box-text-container'>
                         <h2>Statistic 1</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero dui.</p>

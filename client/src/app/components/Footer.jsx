@@ -5,7 +5,7 @@ const Footer = () => {
             <div className='footer-container'>
 
                 <div className='footer1'>
-                    <img className='footer-logo' src='next.svg'/>
+                    <img className='footer-logo' src='next.svg' loading="lazy"/>
                     <h2>ProjectBD Hindu Support Foundation</h2>
                     <p>We imagine a future where Hindu and Muslim Children can play together.
                         A future where hate and violence does not divide us.</p>
@@ -42,10 +42,10 @@ const Footer = () => {
                     Copyright 2025 ProjectBD Hindu Support Foundation
                 </div>
                 <div className='copyright-social'>
-                    <img className='footer-social-img' src='facebook.png'/>
-                    <img className='footer-social-img' src='twitter.png'/>
-                    <img className='footer-social-img' src='instagram.png'/>
-                    <img className='footer-social-img' src='linkedin.png'/>
+                    <img className='footer-social-img' src='facebook.png' loading="lazy"/>
+                    <img className='footer-social-img' src='twitter.png' loading="lazy"/>
+                    <img className='footer-social-img' src='instagram.png' loading="lazy"/>
+                    <img className='footer-social-img' src='linkedin.png' loading="lazy"/>
                 </div>
             </div>
         </footer>
