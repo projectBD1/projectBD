@@ -1,0 +1,9 @@
+.MessageUs {
+    background-color: white;
+    max-width: 50vw;
+    
+}
+.MessageUs-row {
+    max-width: 90%;
+    background-color: green;
+}

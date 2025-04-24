@@ -1,14 +1,15 @@
 'use client';
 import '../Homepage_styles/Banner.css'
 import { useState, useEffect } from 'react'
+import debounce from 'lodash.debounce';
 
 const Banner = () => {
     const [scrollY, setScrollY] = useState(0);
 
     // Function to update scroll position
-    const handleScroll = () => {
-        setScrollY(window.scrollY); // Capture the scroll position
-    };
+    const handleScroll = debounce(() => {
+        setScrollY(window.scrollY);
+    }, 100); // 100ms delay before firing the event
 
     // Adding event listener for scroll
     useEffect(() => {
@@ -20,8 +21,16 @@ const Banner = () => {
 
     return(
         <div className="banner">
-            <video className='banner-video' autoPlay loop muted style={{ top: `${40 + scrollY / 50}%` }}>
-                <source src='random2.mp4' type='video/mp4' />
+            <video
+                className="banner-video"
+                width="1920"
+                height="1080"
+                autoPlay
+                loop
+                muted
+                poster="path/to/poster.jpg" // Placeholder image before video load
+            >
+                <source src="random2.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className='banner-text'>
