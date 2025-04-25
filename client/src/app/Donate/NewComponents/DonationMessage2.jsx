@@ -4,6 +4,7 @@ const DonationMessage2 = () => {
     <div style={{
         width: '100%',
         paddingBottom: '80px',
+        paddingTop: '1px',
         position: 'relative',
     }}>
         <div style={{
