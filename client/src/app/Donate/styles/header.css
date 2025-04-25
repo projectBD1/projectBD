@@ -1,21 +1,3 @@
-/* body {
-  background-color: orange;} */
-/* }
-.container {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #f8efe0;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 85%;
-  height: 200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: black;
-  border-radius: 25px;
-} */
-
 .master {
   background-color: white;
   width:100vw;
@@ -27,147 +9,6 @@
   padding-top: 20px;
   
 }
-/* .subContainer
-{
-    display:flex;
-    gap:40px;
-
-} */
-/* 
-.icon {
-  
-  flex: 1;
-}
-.description {
-  flex: 3;
-  flex-wrap: wrap;
-  height: 100px;
-  overflow: unset;
-} 
-*/
-.button {
-  /* background-color: cornflowerblue; */
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* .input{
-    width:300px;
-} */
-
-.donateBtn {
-  padding: 10px 30px;
-  background-color: crimson;
-  border-radius: 20px;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 500;
-}
-.popup {
-  width: 100vw;
-  background-color: #FFF8F0;
-  border-radius: 6px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.1);
-  text-align: center;
-  padding: 30px;
-  color: #333;
-  visibility: hidden;
-  transition: transform 0.4s, top 0.1s;
-  min-height: 150px; /* Ensures space for extra content */
-  height: auto; /* Adjusts height based on content */
-  overflow: auto; /* Allows scrolling if content exceeds height */
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.popup h2 {
-  font-size: 38px;
-  font-weight: 500;
-  margin: 30px 0 10px;
-}
-
-.popup .closeBtn {
-  width: 100vh;
-  margin-top: 50px;
-  padding: 10px 0;
-  background: #6fd649;
-  color: white;
-  border: 0;
-  outline: none;
-  font-size: 18px;
-  border-radius: 4px;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-.open-popup {
-  visibility: visible;
-  width:100%;
- 
-  font-size: 20px;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.paymentAmounts {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
- 
-  
-}
-.submitPayment{
-  display: flex;
-  justify-content: center;
-}
-
-.paymentAmounts button {
-  color: black;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: #FF7F7F !important;
-  padding: 10px 20px;
- 
-}
-.inputAmount {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-.inputAmount input {
-  border: none; /* Remove default border */
-  border-bottom: 1px solid black; /* Add underline */
-  outline: none; /* Remove focus outline */
-  padding: 5px; /* Optional: Adds spacing for better appearance */
-  font-size: 16px; /* Optional: Adjust font size */
-  background: transparent;
-  color: black;
-}
-
-.closeX {
-  display: flex;
-  justify-content: end;
-
-  
-}
-.closeX button{
-  background-color: #ED0800 !important;
-  width:50px !important;
-  font-size: 15px !important;
-  border-radius: 10 !important;
-  padding:0 !important;
-}
-/* 
-.sunflowerImage {
-  border-radius: 30px;
-} */
 
 .headerMaster {
   display: flex;
@@ -195,8 +36,7 @@
   font-size: 150px;
   margin-bottom: 30px;
   flex-direction: column;
-
- 
+  padding: 20px;
 }
 
 .donateButton {
@@ -207,6 +47,7 @@
   display: flex;
   justify-content: flex-end;
 }
+
 .donateButton button {
   align-self: flex-end;
   padding: 10px 30px;
@@ -217,7 +58,6 @@
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
-
 }
 
 .call {
