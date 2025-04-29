@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar"
+import NormalNavbar from "../Donate/NewComponents/NormalNavbar";
 import Bangladesh from "../components/Bangladesh";
 import './Map.css'; 
 
@@ -12,7 +12,7 @@ import './Map.css';
 export default function map(){
     return(
         <div className = "map-container">
-            <Navbar />
+            <NormalNavbar />
             <h1 className="map-title">Bangladesh Map</h1>
             <Bangladesh />
         </div>

@@ -1,11 +1,11 @@
-import Navbar from "../components/Navbar";
+import NormalNavbar from "../Donate/NewComponents/NormalNavbar";
 import Footer from "../components/Footer";  
 import './About.css'; // Make sure to import the CSS file
 
 export default function About() {
     return (
         <div className="container">
-            <Navbar />
+            <NormalNavbar />
             <div className="max-width-container">
                 <h1 className="title">
                     Bangladesh Genocide: A Call for Recognition

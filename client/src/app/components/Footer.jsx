@@ -24,8 +24,10 @@ const Footer = () => {
                     </div>
                     <div className='footer4'>
                         <h2 >Support</h2>
-                        <div className='footer-support-text'>Help support Bangladesh Hindus</div>
-                        <div className='footer-support-text'>Donate to us or other organizations</div>
+                        <div className='footer-support-text-container'>
+                            <div className='footer-support-text'>Help support Bangladesh Hindus</div>
+                            <div className='footer-support-text'>Donate to us or other organizations</div>
+                        </div>
                         <button className='footer-support-button'>Donate</button>
                     </div>
                     <div className='footer3'>

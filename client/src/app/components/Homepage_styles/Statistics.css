@@ -1,16 +1,33 @@
 .statistics {
-    height: 775px;
+    height: 800px;
     width: 100vw;
-    background-color: rgb(40, 83, 45);
+    background-color: #004830;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 33px 0;
+    padding: 50px 0 33px 0; /* Increased top padding */
 }
+
 .stat-header {
     text-align: center;
     color: white;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.stat-header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #e67e22;
 }
 
 .stat-container {
@@ -23,8 +40,6 @@
     gap: 30px;
 }
 
-
-
 .stat-button {
     font-size: 18px;
     max-width: 150px;
@@ -34,15 +49,24 @@
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     color: white;
+
+    margin-top: 30px;
 }
 
 .stat-box {
     width: 405px;
     height: 540px;
     background-color: white;
-    border-radius: 0px;
+    border-radius: 2px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .stat-box::before {
@@ -52,44 +76,67 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; 
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%);
 }
 
 .box1::before {
-    background: rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%);
 }
+
 .box2::before {
-    background: rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%);
 }
+
 .box3::before {
-    background: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%);
 }
-
-
 
 .stat-box-img {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    border-radius: 0px;
+    border-radius: 2px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
+    transition: transform 0.5s ease;
 }
 
+.stat-box:hover .stat-box-img {
+    transform: scale(1.05);
+}
 
 .stat-box-text-container {
     position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: 2;
     color: white;
-    padding: 20px;
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.stat-box-text-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.stat-box-text-container p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 @media(max-width: 1000px){
     .statistics{
-        background:none;
         gap: 30px;
+        height: auto;
+        padding: 70px 0 50px 0; /* Increased top padding for mobile */
     }
     .stat-container{
         flex-direction: column;
@@ -100,12 +147,24 @@
         width: 75vw;
         height: 300px;
         max-height: 35vh;
-
+    }
+    .stat-header {
+        font-size: 2rem;
+        margin-bottom: 30px;
     }
 }
 
 @media(max-width: 800px){
     .stat-box{
         width: 82.5vw;
+    }
+    .stat-header {
+        font-size: 1.8rem;
+    }
+    .stat-box-text-container h2 {
+        font-size: 1.5rem;
+    }
+    .stat-box-text-container p {
+        font-size: 1rem;
     }
 }
