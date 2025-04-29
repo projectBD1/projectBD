@@ -35,15 +35,18 @@
     gap: 50px;
 }
 
+.footer-support-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .footer2, .footer3, .footer4 {
     display: flex;
     flex-direction: column;
-    gap: 5px
-}
-
-.footer3 {
     gap: 10px
 }
+
 
 .footer-nav-links {
     list-style: none;

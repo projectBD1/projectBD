@@ -169,7 +169,7 @@ export default function Blog() {
                     }}>Stories, updates, and news about our mission and impact</p>
                 </div>
             </div>
-            
+
             {/* Blog Content */}
             <div className="blog-content" style={{
                 maxWidth: '1200px',
@@ -216,7 +216,7 @@ export default function Blog() {
                         <div style={{
                             display: 'flex',
                             flexDirection: 'column',
-                            '@media (min-width: 768px)': {
+                            '@media (minWidth: 768px)': {
                                 flexDirection: 'row'
                             }
                         }}>
