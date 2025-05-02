@@ -1,13 +1,58 @@
 'use client';
-import { useState } from 'react';
-
+import { useState, useEffect } from 'react';
+import { initializePaddle } from '@paddle/paddle-js';
 const DonationMenu = ({ isOpen, onClose }) => {
   const predefinedAmounts = [10, 25, 50, 100, 250, 500];
   const [selectedAmount, setSelectedAmount] = useState(null);
   const [customAmount, setCustomAmount] = useState('');
+  const [paddle, setPaddle] = useState();
+ 
+  useEffect(() => {
+    initializePaddle({
+      environment: 'sandbox',
+      token: process.env.NEXT_PUBLIC_PADDLE_TEST_TOKEN,
+    }).then((paddle) => setPaddle(paddle));
+  }, []);
 
   if (!isOpen) return null;
+  const handleCheckOut=async ()=>{
+    
+    const amountToDonate = customAmount ? Number(customAmount) : selectedAmount;
 
+    if (!amountToDonate || isNaN(amountToDonate) || amountToDonate <= 0) {
+      alert("You must enter a valid, non-zero amount. Please try again.");
+      return;
+    }
+    const response=await fetch('http://localhost:3000/payment',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json',
+      },
+      body: JSON.stringify({
+        value: amountToDonate,
+        priceName: "ProjectBD price name",
+        productName: "ProjectBD prod name",
+        priceDescription:`Donated ${amountToDonate}` ,
+        productDescription: "projectBD prod desc",
+
+      })
+    });
+    const data=await response.json()
+    if (data.transaction=="Payment Failure"){alert("You must enter a valid, non-zero amount. Please try again.")}
+    console.log("Data.transaction is: ", data.transaction)
+    paddle.Checkout.open({
+      transactionId: data.transaction,
+      settings: {
+        displayMode: 'overlay',
+        theme: 'dark',
+        successUrl: 'http://localhost:3001/success', //when payment us successful we redirect them to success url
+      },
+    });
+    setCustomAmount('')
+    setSelectedAmount('')
+  
+  };
+  
   return (
     <div
       style={{
@@ -109,7 +154,10 @@ const DonationMenu = ({ isOpen, onClose }) => {
           }}
         >
           <button
-            onClick={onClose}
+            onClick={()=>{
+              onClose();
+              setCustomAmount('');
+            }}
             style={{
               position: 'absolute',
               right: '28px',
@@ -158,7 +206,7 @@ const DonationMenu = ({ isOpen, onClose }) => {
             {predefinedAmounts.map((amount) => (
               <button
                 key={amount}
-                onClick={() => setSelectedAmount(amount)}
+                onClick={() =>  setSelectedAmount(amount)}
                 style={{
                   padding: '24px 16px',
                   border: 'none',
@@ -191,7 +239,7 @@ const DonationMenu = ({ isOpen, onClose }) => {
                   fontWeight: '700',
                   color: selectedAmount === amount ? 'white' : '#2D3748',
                 }}>
-                  ${amount}
+                  ${amount} 
                 </div>
               </button>
             ))}
@@ -234,7 +282,10 @@ const DonationMenu = ({ isOpen, onClose }) => {
               <input
                 type="number"
                 value={customAmount}
-                onChange={(e) => setCustomAmount(e.target.value)}
+                onChange={(e) => {
+                  setCustomAmount(e.target.value);
+                  console.log("custom amount is: ", customAmount)
+                }}
                 placeholder="Enter amount"
                 style={{
                   width: '100%',
@@ -258,6 +309,7 @@ const DonationMenu = ({ isOpen, onClose }) => {
           </div>
 
           <button
+            onClick={handleCheckOut}
             style={{
               width: '100%',
               padding: '20px',
@@ -285,7 +337,10 @@ const DonationMenu = ({ isOpen, onClose }) => {
           </button>
 
           <button
-            onClick={onClose}
+            onClick={()=>{
+              onClose();
+            setCustomAmount('')
+          }}
             style={{
               width: '100%',
               padding: '12px',
