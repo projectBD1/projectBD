@@ -30,7 +30,7 @@ const Banner = () => {
                 muted
                 poster="path/to/poster.jpg" // Placeholder image before video load
             >
-                <source src="pbd_video.mp4" type="video/mp4" />
+                <source src="pbd_banner_video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className='banner-text'>
