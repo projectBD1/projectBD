@@ -115,20 +115,20 @@ export default function About() {
                   The 1971 Bangladesh Genocide led to the deaths of nearly 3 million people. 
                   Decades later, activists continue to push for global recognition of this atrocity.
                 </p>
-                <div className="stat-grid">
-                  <div className="stat-box">
+                <div className="about-stat-grid">
+                  <div className="about-stat-box">
                     <h3>3 Million</h3>
                     <p>Lives Lost</p>
                   </div>
-                  <div className="stat-box">
+                  <div className="about-stat-box">
                     <h3>10 Million</h3>
                     <p>Refugees</p>
                   </div>
-                  <div className="stat-box">
+                  <div className="about-stat-box">
                     <h3>200,000+</h3>
                     <p>Women Assaulted</p>
                   </div>
-                  <div className="stat-box">
+                  <div className="about-stat-box">
                     <h3>50+ Years</h3>
                     <p>Without Recognition</p>
                   </div>
@@ -418,6 +418,7 @@ export default function About() {
           </section>
         </div>
       </div>
+      <div style={{height: '100px', backgroundColor: 'black'}}></div>
       <Footer />
     </div>
   );

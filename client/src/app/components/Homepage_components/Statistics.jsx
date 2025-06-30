@@ -1,6 +1,13 @@
+'use client';
+import { useRouter } from 'next/navigation';
 import '../Homepage_styles/Statistics.css';
 
 const Statistics = () => {
+  const router = useRouter();
+  const handleLogoClick = () => {
+      router.push('/about'); // Navigate to the about page
+  };
+
   return (
     <div className="statistics">
       <h1 className="stat-header">What is Happening In Bangladesh?</h1>
@@ -49,7 +56,7 @@ const Statistics = () => {
           </div>
         </div>
       </div>
-      <button className="stat-button">Learn More</button>
+      <button className="stat-button" onClick={handleLogoClick}>Learn More</button>
     </div>
   );
 };
