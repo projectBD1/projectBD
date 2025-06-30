@@ -1,12 +1,12 @@
 import React from 'react';
 
-const CallToAction = () => {
+const CallToAction = ({ isOpen, onOpen }) => {
   return (
     <div style={{
       backgroundColor: '#121212', 
       width: '100%',
-      paddingTop: '100px',
-      paddingBottom: '100px'
+      paddingTop: '150px',
+      paddingBottom: '150px'
     }}>
       <section style={{
         backgroundColor: '#004830',
@@ -38,15 +38,13 @@ const CallToAction = () => {
             fontWeight: '600',
             cursor: 'pointer',
             transition: 'transform 0.2s ease'
-          }}>Donate Now</button>
+          }} onClick={onOpen}>Donate Now</button>
         </div>
       </section>
-          
-      <div style={{ marginTop: '100px' }}></div>
 
       <section style={{
         backgroundColor: '#ffffff',
-        padding: '60px 0',
+        padding: '60px 0 80px 0',
         color: '#121212',
       }}>
         <div style={{
@@ -141,9 +139,6 @@ const CallToAction = () => {
               <h3 style={{marginBottom: '10px'}}>Placeholder Org</h3>
               <p>Empowering young people through leadership training and skill development programs.</p>
             </div>
-
-
-
 
           </div>
         </div>
