@@ -6,7 +6,7 @@ const Footer = () => {
             <div className='footer-container'>
 
                 <div className='footer1'>
-                    
+                    <img className='footer-logo' src='next.svg' loading="lazy"/>
                     <h2>ProjectBD Hindu Support Foundation</h2>
                     <p>We imagine a future where Hindu and Muslim Children can play together.
                         A future where hate and violence does not divide us.</p>
