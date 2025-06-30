@@ -44,9 +44,7 @@
     height: 200px;
 }
 
-.navbar-logo {
-    height: 50px;
-}
+
 .navbar-links {
     display: flex;
     flex-direction: row;

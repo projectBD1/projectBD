@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className={`navbar-container ${scrolled ? 'scrolled' : ''}`}>
 
         <div className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-            <img className='navbar-logo' src='next.svg'/>
+            
             <div>
                 <ul className='navbar-links'>
                     <li><Link href= "/">Home</Link></li>

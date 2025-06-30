@@ -12,7 +12,6 @@ const NormalNavbar = () => {
   return (
     <div className={normalNav.navbarContainer}>
       <div className={normalNav.navbar}>
-        <img className={normalNav.navbarLogo} src="next.svg" />
         <div>
           <ul className={normalNav.navbarLinks}>
             <li>
