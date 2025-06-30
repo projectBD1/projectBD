@@ -1,4 +1,4 @@
-import NormalNavbar from "../Donate/NewComponents/NormalNavbar";
+import NormalNavbar from "../components/NormalNavbar";
 import Bangladesh from "../components/Bangladesh";
 import Footer from "../components/Footer";
 import "./Map.css";

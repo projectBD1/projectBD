@@ -28,9 +28,9 @@ const Banner = () => {
                 autoPlay
                 loop
                 muted
-                poster="path/to/poster.jpg" // Placeholder image before video load
+                //poster="path/to/poster.jpg" // Placeholder image before video load
             >
-                <source src="pbd_banner_video.mp4" type="video/mp4" />
+                <source src="random2.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className='banner-text'>

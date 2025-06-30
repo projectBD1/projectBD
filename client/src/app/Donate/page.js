@@ -2,7 +2,7 @@
 import Payment from './payment';
 // import Organizations from './Components/organizations';
 import Navbar from '../components/Navbar';
-import NormalNavbar from './NewComponents/NormalNavbar.jsx';
+import NormalNavbar from '../components/NormalNavbar.jsx';
 import Header from './NewComponents/header';
 // import Body from './Components/body';
 import NewBody from './NewComponents/newbody.jsx';;
@@ -25,8 +25,8 @@ export default function PayMe() {
         <div style={{padding: '10px'}}/>
         <DonationMessage2 />
       </div>
-      <CallToAction />
-      <DonationMenu isOpen={isDonationMenuOpen} onClose={() => setIsDonationMenuOpen(false)} />
+      <CallToAction isOpen={isDonationMenuOpen} onOpen={() => setIsDonationMenuOpen(true)}/>
+      <DonationMenu isOpen={isDonationMenuOpen} onClose={() => setIsDonationMenuOpen(false)}/>
       <Footer />
     </div>
   );

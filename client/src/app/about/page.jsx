@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import NormalNavbar from "../Donate/NewComponents/NormalNavbar";
+import NormalNavbar from "../components/NormalNavbar";
 import Footer from "../components/Footer";
 import "./About.css";
 import Link from "next/link";
