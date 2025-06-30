@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import NormalNavbar from "../Donate/NewComponents/NormalNavbar";
+import NormalNavbar from "../components/NormalNavbar";
 import Footer from "../components/Footer";
 import "./About.css";
 import Link from "next/link";
@@ -370,23 +370,23 @@ export default function About() {
             </p>
             
             <div className="action-grid">
-              <div className="action-card">
+              {/* <div className="action-card">
                 <div className="action-icon">
                   <span className="material-icon">Campaign</span>
                 </div>
                 <h3>Raise Awareness</h3>
                 <p>Share information about the Bangladesh Genocide on social media and in your community.</p>
                 <button className="action-button">Share Now</button>
-              </div>
+              </div> */}
               
-              <div className="action-card">
+              {/* <div className="action-card">
                 <div className="action-icon">
                   <span className="material-icon">Petition</span>
                 </div>
                 <h3>Sign the Petition</h3>
                 <p>Add your voice to the petition urging the UN and US Congress to recognize the genocide.</p>
                 <button className="action-button">Sign Petition</button>
-              </div>
+              </div> */}
               
               <div className="action-card">
                 <div className="action-icon">
@@ -397,14 +397,14 @@ export default function About() {
                 <Link href="/Donate"><button className="action-button">Donate</button></Link>
               </div>
               
-              <div className="action-card">
+              {/* <div className="action-card">
                 <div className="action-icon">
                   <span className="material-icon">Volunteer</span>
                 </div>
                 <h3>Join the Movement</h3>
                 <p>Become a volunteer and participate in events advocating for genocide recognition.</p>
                 <button className="action-button">Volunteer</button>
-              </div>
+              </div> */}
             </div>
             
             {/* <div className="newsletter-container">

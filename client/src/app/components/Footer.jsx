@@ -6,7 +6,7 @@ const Footer = () => {
             <div className='footer-container'>
 
                 <div className='footer1'>
-                    <img className='footer-logo' src='next.svg' loading="lazy"/>
+                    
                     <h2>ProjectBD Hindu Support Foundation</h2>
                     <p>We imagine a future where Hindu and Muslim Children can play together.
                         A future where hate and violence does not divide us.</p>
@@ -16,11 +16,11 @@ const Footer = () => {
                     <div className='footer2'>
                         <ul className='footer-nav-links'>
                             <h2>Navigation</h2>
-                            <li>Home</li>
-                            <li>About the Genocide</li>
-                            <li>Map & Report</li>
-                            <li>Blog</li>
-                            <li>Contact Us</li>
+                            <li><Link href= "/">Home</Link></li>
+                            <li><Link href= "/about">About the Genocide</Link></li>
+                            <li><Link href= "/map">Map & Report</Link></li>
+                            <li><Link href= "/blog">Blog</Link></li>
+                            <li><Link href= "/contact">Contact Us</Link></li>
                         </ul>
                     </div>
                     <div className='footer4'>
