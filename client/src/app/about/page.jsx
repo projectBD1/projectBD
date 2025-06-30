@@ -397,14 +397,14 @@ export default function About() {
                 <Link href="/Donate"><button className="action-button">Donate</button></Link>
               </div>
               
-              {/* <div className="action-card">
+              <div className="action-card">
                 <div className="action-icon">
-                  <span className="material-icon">Volunteer</span>
+                  <span className="material-icon">Share</span>
                 </div>
-                <h3>Join the Movement</h3>
-                <p>Become a volunteer and participate in events advocating for genocide recognition.</p>
-                <button className="action-button">Volunteer</button>
-              </div> */}
+                <h3>Spread Awareness</h3>
+                <p>Share stories and facts about the genocide on social media to educate others and amplify voices.</p>
+                <button className="action-button">Share Now</button>
+              </div>
             </div>
             
             {/* <div className="newsletter-container">
