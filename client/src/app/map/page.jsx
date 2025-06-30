@@ -1,20 +1,17 @@
 import NormalNavbar from "../Donate/NewComponents/NormalNavbar";
 import Bangladesh from "../components/Bangladesh";
-import './Map.css'; 
+import Footer from "../components/Footer";
+import "./Map.css";
 
-// const Bangladesh = useMemo(() => dynamic(
-//     () => import('../components/Bangladesh'),
-//     { 
-//       loading: () => <p>A map is loading</p>,
-//       ssr: false
-//     }
-//   ), [])
-export default function map(){
-    return(
-        <div className = "map-container">
-            <NormalNavbar />
-            <h1 className="map-title">Bangladesh Map</h1>
-            <Bangladesh />
-        </div>
-    )
+export default function Map() {
+  return (
+    <div className="map-container">
+      <NormalNavbar />
+      <main>
+        <h1 className="map-title">Bangladesh Map</h1>
+        <Bangladesh />
+      </main>
+      <Footer />
+    </div>
+  );
 }
