@@ -22,8 +22,8 @@ const Statistics = () => {
           <div className="stat-box-text-container">
             <h2>Widespread Geographic Impact</h2>
             <p>
-              Violence and attacks were reported in over 35 distinct locations
-              across all 8 administrative divisions of Bangladesh, showing a nationwide pattern of communal violence.
+              Violent attacks were reported in over 35 disinct locations across 8 divisions of Bangladesh.
+             
             </p>
           </div>
         </div>
@@ -51,7 +51,7 @@ const Statistics = () => {
           <div className="stat-box-text-container">
             <h2>Spike in Incidents During Political Instability</h2>
             <p>
-              After the resignation of the former Bangladeshi government in 2024, violence spiked. In October 2024, with 35+ incidents reported, it was the most violent month for Hindu communities in that year.
+              In Octover 2024, 35+ incidents were reported and violence started to spike further.
             </p>
           </div>
         </div>
