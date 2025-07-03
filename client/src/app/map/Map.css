@@ -1,11 +1,19 @@
 
 .map-container {
-    padding-top: 80px; /* Adjust this value to fit the height of your navbar */
+    padding-top: 80px; 
     
 }
 .map-title {
-    font-size: 1.5rem; /* Equivalent to text-2xl */
-    font-weight: bold; /* Equivalent to font-bold */
-    margin-top: 1rem;  /* Equivalent to my-4 (my-4 means margin top and bottom 1rem) */
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    margin-top: 1rem;  
     margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+@media (min-width: 640px) {
+  .map-title {
+    font-size: 2rem;
+  }
 }

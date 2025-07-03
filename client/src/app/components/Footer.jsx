@@ -16,11 +16,11 @@ const Footer = () => {
                     <div className='footer2'>
                         <ul className='footer-nav-links'>
                             <h2>Navigation</h2>
-                            <li>Home</li>
-                            <li>About the Genocide</li>
-                            <li>Map & Report</li>
-                            <li>Blog</li>
-                            <li>Contact Us</li>
+                            <li><Link href= "/">Home</Link></li>
+                            <li><Link href= "/about">About the Genocide</Link></li>
+                            <li><Link href= "/map">Map & Report</Link></li>
+                            <li><Link href= "/blog">Blog</Link></li>
+                            <li><Link href= "/contact">Contact Us</Link></li>
                         </ul>
                     </div>
                     <div className='footer4'>

@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import NormalNavbar from '../Donate/NewComponents/NormalNavbar';
+import NormalNavbar from '../components/NormalNavbar';
 import Footer from '../components/Footer';
 import { FaCalendarAlt, FaUser, FaTag } from 'react-icons/fa';
 

@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import NormalHeader from '../Donate/NewComponents/NormalNavbar';
+import NormalHeader from '../components/NormalNavbar';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa';
 import Footer from '../components/Footer';
 export default function Contactpage() {

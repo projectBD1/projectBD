@@ -46,6 +46,7 @@
 
 .navbar-logo {
     height: 50px;
+    cursor: pointer;
 }
 .navbar-links {
     display: flex;
@@ -68,7 +69,7 @@
 
 .navbar-hamburger{
     height: 50px;
-
+    cursor: pointer;
 }
 
 
@@ -89,6 +90,9 @@
     .navbar-hamburger{
         display: none;
     }
+    .navbar-dropdown{
+        display: none;
+    }
 }
 
 @media(max-width: 800px) {
@@ -103,3 +107,41 @@
         display: none;
     }
 }
+
+
+
+
+
+
+.navbar-dropdown {
+        position: absolute;
+        top: 75px; /* Position below the hamburger icon */
+        right: 20px; /* Align to the right with some margin */
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px; /* Optional: add rounded corners */
+        z-index: 999;
+        width: auto; /* Make the dropdown width fit its contents */
+        min-width: 200px; /* Optional: set a minimum width if needed */
+    }
+
+    .navbar-dropdown ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar-dropdown li {
+        margin: 10px 0;
+    }
+
+    .navbar-dropdown a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+    }
+
+    .navbar-dropdown a:hover {
+        background-color: #444;
+    }

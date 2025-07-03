@@ -1,12 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  font-family: 'Roboto', 'Segoe UI', sans-serif;
-  line-height: 1.6;
+
+.genocide-awareness-page {
   color: #333;
   background-color: #f8f9fa;
   overflow: hidden;
@@ -16,33 +10,16 @@ body {
   overflow-x: hidden;
 }
 
-.max-width-container {
+.genocide-awareness-page .max-width-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', 'Georgia', serif;
-  margin-bottom: 1rem;
-  line-height: 1.3;
-}
 
-p {
-  margin-bottom: 1rem;
-}
 
-a {
-  color: #bd1f2d;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
 
-a:hover {
-  color: #8c1621;
-}
-
-blockquote {
+.genocide-awareness-page blockquote {
   font-style: italic;
   border-left: 4px solid #bd1f2d;
   padding-left: 1rem;
@@ -50,7 +27,7 @@ blockquote {
   color: #555;
 }
 
-blockquote cite {
+.genocide-awareness-page blockquote cite {
   display: block;
   font-size: 0.9rem;
   margin-top: 0.5rem;
@@ -58,7 +35,7 @@ blockquote cite {
 }
 
 /* Hero Section */
-.hero-section {
+.genocide-awareness-page .hero-section {
   position: relative;
   height: 70vh;
   min-height: 500px;
@@ -72,7 +49,7 @@ blockquote cite {
   text-align: center;
 }
 
-.hero-overlay {
+.genocide-awareness-page .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -81,26 +58,26 @@ blockquote cite {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
 }
 
-.hero-content {
+.genocide-awareness-page .hero-content {
   position: relative;
   z-index: 2;
   max-width: 800px;
   padding: 0 20px;
 }
 
-.hero-title {
+.genocide-awareness-page .hero-title {
   font-size: 3.5rem;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero-subtitle {
+.genocide-awareness-page .hero-subtitle {
   font-size: 1.5rem;
   margin-bottom: 2rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.cta-button {
+.genocide-awareness-page .cta-button {
   padding: 15px 30px;
   font-size: 1.1rem;
   font-weight: bold;
@@ -112,13 +89,13 @@ blockquote cite {
   transition: all 0.3s ease;
 }
 
-.cta-button:hover {
+.genocide-awareness-page .cta-button:hover {
   background-color: #a41a27;
   transform: translateY(-2px);
 }
 
 /* Quick Navigation */
-.quick-nav {
+.genocide-awareness-page .quick-nav {
   background-color: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -126,7 +103,7 @@ blockquote cite {
   z-index: 100;
 }
 
-.nav-list {
+.genocide-awareness-page .nav-list {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -135,7 +112,7 @@ blockquote cite {
   overflow-x: auto;
 }
 
-.nav-list li {
+.genocide-awareness-page .nav-list li {
   padding: 15px 20px;
   font-weight: 500;
   cursor: pointer;
@@ -144,80 +121,74 @@ blockquote cite {
   transition: all 0.3s ease;
 }
 
-.nav-list li:hover {
+.genocide-awareness-page .nav-list li:hover {
   color: #bd1f2d;
 }
 
-.nav-list li.active {
+.genocide-awareness-page .nav-list li.active {
   border-bottom-color: #bd1f2d;
   color: #bd1f2d;
 }
 
 /* Content Sections */
-.content-section {
+.genocide-awareness-page .content-section {
   padding: 80px 0;
   border-bottom: 1px solid #eaeaea;
 }
 
-.section-container {
+.genocide-awareness-page .section-container {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   align-items: center;
 }
 
-.text-content {
+.genocide-awareness-page .text-content {
   flex: 1;
   min-width: 300px;
 }
 
-.media-content {
+.genocide-awareness-page .media-content {
   flex: 1;
   min-width: 300px;
 }
 
-.section-title {
+.genocide-awareness-page .section-title {
   font-size: 2.2rem;
   color: #333;
 }
 
-
-/* 
-.dark-section .section-title, .dark-section .section-divider {
-  color: #fff;
-} */
-
-.section-divider {
+.genocide-awareness-page .section-divider {
   width: 60px;
   height: 4px;
   background-color: #bd1f2d;
   margin-bottom: 20px;
 }
 
-.centered {
+.genocide-awareness-page .centered {
   margin-left: auto;
   margin-right: auto;
 }
 
-.centered-text {
+.genocide-awareness-page .centered-text {
   text-align: center;
   max-width: 800px;
   margin: 0 auto 40px;
 }
 
-.lead-paragraph {
+.genocide-awareness-page .lead-paragraph {
   font-size: 1.2rem;
   line-height: 1.7;
   margin-bottom: 30px;
 }
 
-.feature-image {
+.genocide-awareness-page .feature-image {
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
-.image-caption {
+.genocide-awareness-page .image-caption {
   font-size: 0.9rem;
   text-align: center;
   color: #666;
@@ -225,14 +196,14 @@ blockquote cite {
 }
 
 /* Statistics Grid */
-.stat-grid {
+.genocide-awareness-page .about-stat-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 20px;
   margin: 30px 0;
 }
 
-.stat-box {
+.genocide-awareness-page .about-stat-box {
   background-color: #f7f7f7;
   padding: 20px;
   border-radius: 8px;
@@ -241,31 +212,31 @@ blockquote cite {
   transition: transform 0.3s ease;
 }
 
-.stat-box:hover {
+.genocide-awareness-page .about-stat-box:hover {
   transform: translateY(-5px);
 }
 
-.stat-box h3 {
+.genocide-awareness-page .about-stat-box h3 {
   color: #bd1f2d;
   font-size: 1.8rem;
   margin-bottom: 5px;
 }
 
-.stat-box p {
+.genocide-awareness-page .stat-box p {
   margin-bottom: 0;
   font-size: 0.9rem;
   color: #555;
 }
 
 /* Timeline */
-.timeline {
+.genocide-awareness-page .timeline {
   position: relative;
   max-width: 500px;
   margin: 0 auto;
   padding: 20px 0;
 }
 
-.timeline::before {
+.genocide-awareness-page .timeline::before {
   content: '';
   position: absolute;
   top: 0;
@@ -275,13 +246,13 @@ blockquote cite {
   background: #bd1f2d;
 }
 
-.timeline-item {
+.genocide-awareness-page .timeline-item {
   position: relative;
   margin-bottom: 30px;
   padding-left: 45px;
 }
 
-.timeline-dot {
+.genocide-awareness-page .timeline-dot {
   position: absolute;
   left: 15px;
   width: 12px;
@@ -290,13 +261,13 @@ blockquote cite {
   border-radius: 50%;
 }
 
-.timeline-date {
+.genocide-awareness-page .timeline-date {
   font-weight: bold;
   color: #bd1f2d;
   margin-bottom: 5px;
 }
 
-.timeline-content {
+.genocide-awareness-page .timeline-content {
   background: #f7f7f7;
   padding: 10px 15px;
   border-radius: 5px;
@@ -304,7 +275,7 @@ blockquote cite {
 }
 
 /* Key Figures */
-.key-figure {
+.genocide-awareness-page .key-figure {
   display: flex;
   align-items: center;
   background: #f7f7f7;
@@ -313,7 +284,7 @@ blockquote cite {
   margin-top: 20px;
 }
 
-.key-figure img {
+.genocide-awareness-page .key-figure img {
   width: 80px;
   height: 80px;
   border-radius: 50%;

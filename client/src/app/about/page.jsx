@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import NormalNavbar from "../Donate/NewComponents/NormalNavbar";
+import NormalNavbar from "../components/NormalNavbar";
 import Footer from "../components/Footer";
 import "./About.css";
 import Link from "next/link";
@@ -115,20 +115,20 @@ export default function About() {
                   The 1971 Bangladesh Genocide led to the deaths of nearly 3 million people. 
                   Decades later, activists continue to push for global recognition of this atrocity.
                 </p>
-                <div className="stat-grid">
-                  <div className="stat-box">
+                <div className="about-stat-grid">
+                  <div className="about-stat-box">
                     <h3>3 Million</h3>
                     <p>Lives Lost</p>
                   </div>
-                  <div className="stat-box">
+                  <div className="about-stat-box">
                     <h3>10 Million</h3>
                     <p>Refugees</p>
                   </div>
-                  <div className="stat-box">
+                  <div className="about-stat-box">
                     <h3>200,000+</h3>
                     <p>Women Assaulted</p>
                   </div>
-                  <div className="stat-box">
+                  <div className="about-stat-box">
                     <h3>50+ Years</h3>
                     <p>Without Recognition</p>
                   </div>
@@ -370,23 +370,23 @@ export default function About() {
             </p>
             
             <div className="action-grid">
-              <div className="action-card">
+              {/* <div className="action-card">
                 <div className="action-icon">
                   <span className="material-icon">Campaign</span>
                 </div>
                 <h3>Raise Awareness</h3>
                 <p>Share information about the Bangladesh Genocide on social media and in your community.</p>
                 <button className="action-button">Share Now</button>
-              </div>
+              </div> */}
               
-              <div className="action-card">
+              {/* <div className="action-card">
                 <div className="action-icon">
                   <span className="material-icon">Petition</span>
                 </div>
                 <h3>Sign the Petition</h3>
                 <p>Add your voice to the petition urging the UN and US Congress to recognize the genocide.</p>
                 <button className="action-button">Sign Petition</button>
-              </div>
+              </div> */}
               
               <div className="action-card">
                 <div className="action-icon">
@@ -399,11 +399,11 @@ export default function About() {
               
               <div className="action-card">
                 <div className="action-icon">
-                  <span className="material-icon">Volunteer</span>
+                  <span className="material-icon">Share</span>
                 </div>
-                <h3>Join the Movement</h3>
-                <p>Become a volunteer and participate in events advocating for genocide recognition.</p>
-                <button className="action-button">Volunteer</button>
+                <h3>Spread Awareness</h3>
+                <p>Share stories and facts about the genocide on social media to educate others and amplify voices.</p>
+                <button className="action-button">Share Now</button>
               </div>
             </div>
             
@@ -418,6 +418,7 @@ export default function About() {
           </section>
         </div>
       </div>
+      <div style={{height: '100px', backgroundColor: 'black'}}></div>
       <Footer />
     </div>
   );
