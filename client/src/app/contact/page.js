@@ -37,7 +37,7 @@ export default function Contactpage() {
                         </span>
                         <div>
                             <h3>Phone</h3>
-                            <p>(555) 123-4567</p>
+                            <p>1(666) 666-6666</p>
                         </div>
                     </div>
                     <div className="info-item" style={{ display: 'flex', alignItems: 'flex-start', gap: '18px' }}>
@@ -46,7 +46,7 @@ export default function Contactpage() {
                         </span>
                         <div>
                             <h3>Email</h3>
-                            <p>contact@yournonprofit.org</p>
+                            <p>contact.projectbd@gmail.com</p>
                         </div>
                     </div>
                     <div className="info-item" style={{ display: 'flex', alignItems: 'flex-start', gap: '18px' }}>

@@ -33,9 +33,9 @@ const Footer = () => {
                     </div>
                     <div className='footer3'>
                         <h2>Contact Us</h2>
-                        <div className='footer-contact-text'>Phone: 1(666)666-6666</div>
-                        <div className='footer-contact-text'>Email: contact@projectBD.org</div>
-                        <div className='footer-contact-text'>Mail: 123 Sesame Street, {<br/>} NY, NY 10010</div>
+                        <div className='footer-contact-text'>Phone: 1(666) 666-6666</div>
+                        <div className='footer-contact-text'>Email: contact.projectbd@gmail.com</div>
+                        <div className='footer-contact-text'>Mail: N/A, {<br/>} New York, NY 10001</div>
                     </div>
                 </div>
             

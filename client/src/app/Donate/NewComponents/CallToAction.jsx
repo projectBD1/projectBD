@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const CallToAction = ({ isOpen, onOpen }) => {
   const [hoverIndex, setHoverIndex] = useState(null);
+  const [showAll, setShowAll] = useState(false);
 
   const cardBaseStyle = {
     padding: '20px',
@@ -15,6 +16,92 @@ const CallToAction = ({ isOpen, onOpen }) => {
     transform: 'scale(1.03)',
     boxShadow: '0px 8px 16px rgba(0,0,0,0.1)',
   };
+
+  const organizations = [
+    {
+      name: 'Coalition of Hindus of North America',
+      url: 'https://cohna.org/',
+      image: './CoalitionOfHindusOfNorthAmerica.jpg',
+      alt: 'Coalition of Hindus of North America',
+      description: 'Advocates for the fair and accurate representation of Hindus in public discourse and policy across North America.',
+      imageMaxWidth: '120px'
+    },
+    {
+      name: 'Hindu Students Council',
+      url: 'https://www.hindustudentscouncil.org/',
+      image: './HSC.png',
+      alt: 'Hindu Students Council',
+      description: 'Empowers Hindu youth through cultural education, community building, and leadership development on college campuses.',
+      imageMaxWidth: '120px'
+    },
+    {
+      name: 'Amnesty International',
+      url: 'https://www.amnesty.org/',
+      image: './AmnestyInternational.png',
+      alt: 'Amnesty International',
+      description: 'A global human rights organization fighting injustice and advocating for freedom, dignity, and equality for all.',
+      imageMaxWidth: '200px'
+    },
+    {
+      name: 'Minority Rights Group',
+      url: 'https://minorityrights.org/',
+      image: './MinorityRightsGroup.png',
+      alt: 'Minority Rights Group',
+      description: 'Defends the rights of ethnic, religious, and indigenous minorities through legal advocacy, training, and global campaigns.',
+      imageMaxWidth: '120px'
+    },
+    {
+      name: 'Human Rights Congress for Bangladesh Minorities',
+      url: 'https://hrcbm.org/',
+      image: '/HRCBM.png',
+      alt: 'HRCBM',
+      description: 'Documents and advocates against human rights violations targeting minorities in Bangladesh, especially Hindus.',
+      imageMaxWidth: '120px'
+    },
+    {
+      name: 'Sewa USA',
+      url: 'https://sewausa.org/',
+      image: '/SewaUSA.png',
+      alt: 'Sewa USA',
+      description: 'A Hindu faith-based humanitarian group providing disaster relief, education, and community development worldwide.',
+      imageMaxWidth: '200px'
+    },
+    {
+      name: 'Bangladesh Hindu Mandir',
+      url: 'https://bangladeshhindumandir.org/',
+      image: '/BangladeshHinduMandir.png',
+      alt: 'Bangladesh Hindu Mandir',
+      description: 'Preserves and promotes the religious and cultural traditions of Bangladeshi Hindus in the diaspora.',
+      imageMaxWidth: '200px'
+    },
+    {
+      name: 'Global Hindu Heritage Foundation',
+      url: 'https://www.savetemples.org/',
+      image: '/GlobalHinduHeritageFoundation.png',
+      alt: 'GHHF',
+      description: 'Works to preserve Hindu temples, traditions, and dharmic values while opposing religious conversions and temple control.',
+      imageMaxWidth: '80px'
+    },
+    {
+      name: 'Hindu American Foundation',
+      url: 'https://www.hinduamerican.org/',
+      image: '/HinduAmericanFoundation.png',
+      alt: 'HAF',
+      description: 'Champions civil rights, religious freedom, and accurate representation of Hinduism through education and policy advocacy.',
+      imageMaxWidth: '200px'
+    },
+    {
+      name: 'Hindus for Human Rights',
+      url: 'https://www.hindusforhumanrights.org/',
+      image: '/HindusForHumanRights.png',
+      alt: 'Hindus for Human Rights',
+      description: 'Promotes pluralism and social justice by challenging religious nationalism and standing up for human rights in South Asia.',
+      imageMaxWidth: '200px'
+    }
+  ];
+
+  // Show first 6 organizations initially, show all when showAll is true
+  const displayedOrganizations = showAll ? organizations : organizations.slice(0, 6);
 
   return (
     <div
@@ -80,23 +167,25 @@ const CallToAction = ({ isOpen, onOpen }) => {
 
       <section
         style={{
-          backgroundColor: '#ffffff',
-          padding: '60px 0',
+          backgroundColor: '#f8f9fa',
+          padding: '80px 0',
           color: '#121212',
         }}
       >
         <div
           style={{
-            maxWidth: '1200px',
+            maxWidth: '1400px',
             margin: '0 auto',
             padding: '0 20px',
           }}
         >
           <h2
             style={{
-              fontSize: '2rem',
+              fontSize: '2.5rem',
               textAlign: 'center',
-              marginBottom: '40px',
+              marginBottom: '60px',
+              fontWeight: '700',
+              color: '#1a1a1a',
             }}
           >
             Other Organizations Making an Impact
@@ -105,284 +194,87 @@ const CallToAction = ({ isOpen, onOpen }) => {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-              gap: '30px',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+              gap: '40px',
             }}
           >
-            <a
-              href="https://cohna.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-              onMouseEnter={() => setHoverIndex(0)}
-              onMouseLeave={() => setHoverIndex(null)}
-            >
-              <div
-                style={{
-                  ...cardBaseStyle,
-                  ...(hoverIndex === 0 ? hoveredStyle : {}),
-                }}
+            {displayedOrganizations.map((org, index) => (
+              <a
+                key={index}
+                href={org.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none', color: 'inherit' }}
+                onMouseEnter={() => setHoverIndex(index)}
+                onMouseLeave={() => setHoverIndex(null)}
               >
-                <img
-                  src="./CoalitionOfHindusOfNorthAmerica.jpg"
-                  alt="Coalition of Hindus of North America"
-                  style={{ width: '30%', height: '80px', marginBottom: '15px' }}
-                />
-                <h3 style={{ marginBottom: '10px' }}>
-                  Coalition of Hindus of North America
-                </h3>
-                <p>
-                  Advocates for the fair and accurate representation of Hindus in
-                  public discourse and policy across North America.
-                </p>
-              </div>
-            </a>
-
-            <a
-              href="https://www.hindustudentscouncil.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-              onMouseEnter={() => setHoverIndex(1)}
-              onMouseLeave={() => setHoverIndex(null)}
-            >
-              <div
-                style={{
-                  ...cardBaseStyle,
-                  ...(hoverIndex === 1 ? hoveredStyle : {}),
-                }}
-              >
-                <img
-                  src="./HSC.png"
-                  alt="Hindu Students Council"
-                  style={{ width: '30%', height: '80px', marginBottom: '15px' }}
-                />
-                <h3 style={{ marginBottom: '10px' }}>Hindu Students Council</h3>
-                <p>
-                  Empowers Hindu youth through cultural education, community
-                  building, and leadership development on college campuses.
-                </p>
-              </div>
-            </a>
-
-            <a
-              href="https://www.amnesty.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-              onMouseEnter={() => setHoverIndex(2)}
-              onMouseLeave={() => setHoverIndex(null)}
-            >
-              <div
-                style={{
-                  ...cardBaseStyle,
-                  ...(hoverIndex === 2 ? hoveredStyle : {}),
-                }}
-              >
-                <img
-                  src="./AmnestyInternational.png"
-                  alt="Amnesty International"
-                  style={{ width: '200px', height: '80px', marginBottom: '15px' }}
-                />
-                <h3 style={{ marginBottom: '10px' }}>Amnesty International</h3>
-                <p>
-                  A global human rights organization fighting injustice and
-                  advocating for freedom, dignity, and equality for all.
-                </p>
-              </div>
-            </a>
-
-            <a
-              href="https://minorityrights.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-              onMouseEnter={() => setHoverIndex(3)}
-              onMouseLeave={() => setHoverIndex(null)}
-            >
-              <div
-                style={{
-                  ...cardBaseStyle,
-                  ...(hoverIndex === 3 ? hoveredStyle : {}),
-                }}
-              >
-                <img
-                  src="./MinorityRightsGroup.png"
-                  alt="Minority Rights Group"
-                  style={{ width: '30%', height: '80px', marginBottom: '15px' }}
-                />
-                <h3 style={{ marginBottom: '10px' }}>Minority Rights Group</h3>
-                <p>
-                  Defends the rights of ethnic, religious, and indigenous minorities
-                  through legal advocacy, training, and global campaigns.
-                </p>
-              </div>
-            </a>
-
-            <a
-              href="https://hrcbm.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-              onMouseEnter={() => setHoverIndex(4)}
-              onMouseLeave={() => setHoverIndex(null)}
-            >
-              <div
-                style={{
-                  ...cardBaseStyle,
-                  ...(hoverIndex === 4 ? hoveredStyle : {}),
-                }}
-              >
-                <img
-                  src="/HRCBM.png"
-                  alt="HRCBM"
-                  style={{ width: '30%', height: '80px', marginBottom: '15px' }}
-                />
-                <h3 style={{ marginBottom: '10px' }}>
-                  Human Rights Congress for Bangladesh Minorities
-                </h3>
-                <p>
-                  Documents and advocates against human rights violations targeting
-                  minorities in Bangladesh, especially Hindus.
-                </p>
-              </div>
-            </a>
-
-            <a
-              href="https://sewausa.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-              onMouseEnter={() => setHoverIndex(5)}
-              onMouseLeave={() => setHoverIndex(null)}
-            >
-              <div
-                style={{
-                  ...cardBaseStyle,
-                  ...(hoverIndex === 5 ? hoveredStyle : {}),
-                }}
-              >
-                <img
-                  src="/SewaUSA.png"
-                  alt="Sewa USA"
-                  style={{ width: '30%', height: '80px', marginBottom: '15px' }}
-                />
-                <h3 style={{ marginBottom: '10px' }}>Sewa USA</h3>
-                <p>
-                  A Hindu faith-based humanitarian group providing disaster relief,
-                  education, and community development worldwide.
-                </p>
-              </div>
-            </a>
-
-            <a
-              href="https://bangladeshhindumandir.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-              onMouseEnter={() => setHoverIndex(6)}
-              onMouseLeave={() => setHoverIndex(null)}
-            >
-              <div
-                style={{
-                  ...cardBaseStyle,
-                  ...(hoverIndex === 6 ? hoveredStyle : {}),
-                }}
-              >
-                <img
-                  src="/BangladeshHinduMandir.png"
-                  alt="Bangladesh Hindu Mandir"
-                  style={{ width: '30%', height: '80px', marginBottom: '15px' }}
-                />
-                <h3 style={{ marginBottom: '10px' }}>Bangladesh Hindu Mandir</h3>
-                <p>
-                  Preserves and promotes the religious and cultural traditions of
-                  Bangladeshi Hindus in the diaspora.
-                </p>
-              </div>
-            </a>
-
-            <a
-              href="https://www.savetemples.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-              onMouseEnter={() => setHoverIndex(7)}
-              onMouseLeave={() => setHoverIndex(null)}
-            >
-              <div
-                style={{
-                  ...cardBaseStyle,
-                  ...(hoverIndex === 7 ? hoveredStyle : {}),
-                }}
-              >
-                <img
-                  src="/GlobalHinduHeritageFoundation.png"
-                  alt="GHHF"
-                  style={{ width: '80px', height: '80px', marginBottom: '15px' }}
-                />
-                <h3 style={{ marginBottom: '10px' }}>Global Hindu Heritage Foundation</h3>
-                <p>
-                  Works to preserve Hindu temples, traditions, and dharmic values
-                  while opposing religious conversions and temple control.
-                </p>
-              </div>
-            </a>
-
-            <a
-              href="https://www.hinduamerican.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-              onMouseEnter={() => setHoverIndex(8)}
-              onMouseLeave={() => setHoverIndex(null)}
-            >
-              <div
-                style={{
-                  ...cardBaseStyle,
-                  ...(hoverIndex === 8 ? hoveredStyle : {}),
-                }}
-              >
-                <img
-                  src="/HinduAmericanFoundation.png"
-                  alt="HAF"
-                  style={{ width: '200px', height: '80px', marginBottom: '15px' }}
-                />
-                <h3 style={{ marginBottom: '10px' }}>Hindu American Foundation</h3>
-                <p>
-                  Champions civil rights, religious freedom, and accurate
-                  representation of Hinduism through education and policy advocacy.
-                </p>
-              </div>
-            </a>
-
-            <a
-              href="https://www.hindusforhumanrights.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-              onMouseEnter={() => setHoverIndex(9)}
-              onMouseLeave={() => setHoverIndex(null)}
-            >
-              <div
-                style={{
-                  ...cardBaseStyle,
-                  ...(hoverIndex === 9 ? hoveredStyle : {}),
-                }}
-              >
-                <img
-                  src="/HindusForHumanRights.png"
-                  alt="Hindus for Human Rights"
-                  style={{ width: '200px', height: '80px', marginBottom: '15px' }}
-                />
-                <h3 style={{ marginBottom: '10px' }}>Hindus for Human Rights</h3>
-                <p>
-                  Promotes pluralism and social justice by challenging religious
-                  nationalism and standing up for human rights in South Asia.
-                </p>
-              </div>
-            </a>
+                <div
+                  style={{
+                    ...cardBaseStyle,
+                    ...(hoverIndex === index ? hoveredStyle : {}),
+                    padding: '30px',
+                    borderRadius: '16px',
+                    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
+                    transition: 'all 0.3s ease',
+                    height: '280px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                  }}
+                >
+                  <div style={{ textAlign: 'center', marginBottom: '20px', flexShrink: 0 }}>
+                    <img
+                      src={org.image}
+                      alt={org.alt}
+                      style={{
+                        maxWidth: org.imageMaxWidth,
+                        maxHeight: '80px',
+                        width: 'auto',
+                        height: 'auto',
+                        objectFit: 'contain',
+                      }}
+                    />
+                  </div>
+                  <h3 style={{ 
+                    marginBottom: '15px', 
+                    fontSize: '1.3rem',
+                    fontWeight: '600',
+                    color: '#1a1a1a',
+                    flexShrink: 0,
+                  }}>
+                    {org.name}
+                  </h3>
+                  <p style={{ lineHeight: '1.6', color: '#666', flex: 1 }}>
+                    {org.description}
+                  </p>
+                </div>
+              </a>
+            ))}
           </div>
+
+          {organizations.length > 6 && (
+            <div style={{ textAlign: 'center', marginTop: '40px' }}>
+              <button
+                onClick={() => setShowAll(!showAll)}
+                style={{
+                  backgroundColor: '#004830',
+                  color: 'white',
+                  padding: '12px 30px',
+                  border: 'none',
+                  borderRadius: '25px',
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  ':hover': {
+                    backgroundColor: '#003a26',
+                    transform: 'translateY(-2px)',
+                  }
+                }}
+              >
+                {showAll ? 'Show Less' : 'Show More'}
+              </button>
+            </div>
+          )}
         </div>
       </section>
     </div>
