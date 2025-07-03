@@ -14,10 +14,8 @@ const Statistics = () => {
           <div className="stat-box-text-container">
             <h2>Widespread Geographic Impact</h2>
             <p>
-              Violence and attacks were reported in over 35 distinct locations
-              across all 8 administrative divisions of Bangladesh (Dhaka,
-              Chittagong, Khulna, Mymensingh, Rajshahi, Rangpur, Sylhet,
-              Barisal), showing a nationwide pattern of communal violence.
+              Violent attacks occurred in 35+ locations across all 8 divisions in Bangladesh.
+
             </p>
           </div>
         </div>
@@ -30,7 +28,7 @@ const Statistics = () => {
           <div className="stat-box-text-container">
             <h2>Scale of Property and Religious Site Attacks</h2>
             <p>
-             In 2024 100+ Hindu homes and businesses were looted and vandalized. 20+ temples and religious idols were attacked and destroyed.
+              Just last year, over 100 Hindu homes and businesses were looted, and over 20 temples were vandalized.
             </p>
           </div>
         </div>
@@ -43,7 +41,7 @@ const Statistics = () => {
           <div className="stat-box-text-container">
             <h2>Spike in Incidents During Political Instability</h2>
             <p>
-              After the resignation of the former Bangladeshi government in 2024, violence spiked. Incidents were reported in at least 6 districts, suggesting a coordinated wave. In October 2024, with 35+ incidents reported, it was the most violent month for Hindu communities in that year.
+              In October last year, 35+ incidents were reported involving brutal assaults, destruction of property, and theft of Hindu goods.
             </p>
           </div>
         </div>
