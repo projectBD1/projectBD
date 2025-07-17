@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import './Footer.css';
 const Footer = () => {
-  return (
+    return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer1">

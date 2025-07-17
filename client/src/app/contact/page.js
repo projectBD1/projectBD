@@ -22,29 +22,37 @@ export default function Contactpage() {
             <div className="contact-container">
                 <div className="contact-info">
                     <h2>Get in Touch</h2>
-                    <div className="info-item">
-                        <FaMapMarkerAlt size={24} color="#004830"/>
+                    <div className="info-item" style={{ display: 'flex', alignItems: 'flex-start', gap: '18px' }}>
+                        <span style={{ flex: '0 0 auto', display: 'flex', alignItems: 'center', height: '24px' }}>
+                            <FaMapMarkerAlt size={22} color="#004830"/>
+                        </span>
                         <div>
                             <h3>Address</h3>
-                            <p>123 Nonprofit Way<br />New York, NY 10001</p>
+                            <p>N/A<br />New York, NY 10001</p>
                         </div>
                     </div>
-                    <div className="info-item">
-                        <FaPhone size={24} color="#004830"/>
+                    <div className="info-item" style={{ display: 'flex', alignItems: 'flex-start', gap: '18px' }}>
+                        <span style={{ flex: '0 0 auto', display: 'flex', alignItems: 'center', height: '24px' }}>
+                            <FaPhone size={22} color="#004830"/>
+                        </span>
                         <div>
                             <h3>Phone</h3>
-                            <p>(555) 123-4567</p>
+                            <p>1(666) 666-6666</p>
                         </div>
                     </div>
-                    <div className="info-item">
-                        <FaEnvelope size={24} color="#004830"/>
+                    <div className="info-item" style={{ display: 'flex', alignItems: 'flex-start', gap: '18px' }}>
+                        <span style={{ flex: '0 0 auto', display: 'flex', alignItems: 'center', height: '24px' }}>
+                            <FaEnvelope size={22} color="#004830"/>
+                        </span>
                         <div>
                             <h3>Email</h3>
-                            <p>contact@yournonprofit.org</p>
+                            <p>contact.projectbd@gmail.com</p>
                         </div>
                     </div>
-                    <div className="info-item">
-                        <FaClock size={24} color="#004830"/>
+                    <div className="info-item" style={{ display: 'flex', alignItems: 'flex-start', gap: '18px' }}>
+                        <span style={{ flex: '0 0 auto', display: 'flex', alignItems: 'center', height: '24px' }}>
+                            <FaClock size={22} color="#004830"/>
+                        </span>
                         <div>
                             <h3>Hours</h3>
                             <p>Monday - Friday: 9:00 AM - 5:00 PM<br />
