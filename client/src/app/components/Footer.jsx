@@ -49,15 +49,9 @@ const Footer = () => {
           </div>
           <div className="footer3">
             <h2>Contact Us</h2>
-            <div className="footer-contact-text">Phone: 1(862)234-0089</div>
-            <div className="footer-contact-text">
-              Email: contact@projectBD.org
-            </div>
-            <div className="footer-contact-text">
-              Mail: 123 Sesame Street, {<br />} NY, NY 10010
-            </div>
-            <div className="footer-contact-text">X: projectBD6</div>
-            <div className="footer-contact-text">Instagram: projectBD6</div>
+            <div className="footer-contact-text">Phone: 1(862) 234-0089</div>
+            <div className="footer-contact-text">Email: contact.projectbd@gmail.com</div>
+            <div className='footer-contact-text'>Mail: N/A, {<br/>} New York, NY 10001</div>
           </div>
         </div>
       </div>

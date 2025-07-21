@@ -37,7 +37,7 @@ export default function Contactpage() {
                         </span>
                         <div>
                             <h3>Phone</h3>
-                            <p>1(666) 666-6666</p>
+                            <p>1(862) 234-0089</p>
                         </div>
                     </div>
                     <div className="info-item" style={{ display: 'flex', alignItems: 'flex-start', gap: '18px' }}>
