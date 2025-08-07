@@ -11,7 +11,6 @@ export default function Map() {
       <main>
             <div style={{height: '100px', backgroundColor: 'orange', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '25px', fontWeight: 'bold', color: 'white',}}>Violence Map and Reporting System Work in Progress</div>
         <h1 className="map-title">Bangladesh Map</h1>
-        <Bangladesh />
       </main>
       <h1 className="map-title">Report Violence</h1>
       <UploadForm/>
